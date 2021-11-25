@@ -26,7 +26,7 @@ light link color: #ACCEFF*/
 }
 .container img {
   height: 60px;
-  width: 60px;
+  aspect-ratio: 1;
   color: white;
   text-transform: uppercase;
   text-decoration: none;
@@ -67,7 +67,7 @@ nav a {
   text-transform: uppercase;
   font-size: 14px;
 }
-nav a:hover {
+nav a:hover, nav a:focus {
   color: var(--primary);
   font-weight: bold;
 }
@@ -79,10 +79,11 @@ nav a::before {
   position: absolute;
   top: 0;
   width: 0;
-  transition: all ease-in-out 150ms;
+  transition: ease-in-out 150ms;
+	transition-property: width, color;
   max-width: 110px
 }
-nav a:hover::before {
+nav a:hover::before, nav a:focus::before {
   width: 100%;
 }
 header .huidig {
@@ -107,7 +108,7 @@ footer a {
   color: #ACCEFF
 }
 footer img {
-  width: 140px;
+  aspect-ratio: auto;
   height: 65px;
 }
 /*css body general*/
@@ -120,6 +121,11 @@ body {
 a {
   color: #004BA9;
 }
+
+a:focus {
+  color: var(--primary);
+}
+
 /*css body index*/
 p {
   font-size: 15px;
@@ -150,15 +156,12 @@ button {
 #faq div {
   padding: 5px;
 }
-button:hover {
+button:hover, button:focus-visible {
   border-color: var(--primary);
   box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
   color: #202124;
 }
-button:focus {
-  border-color: var(--secondary);
-  outline: none;
-}
+
 .indexmain {
   display: grid;
   grid-template-columns: 7fr 3fr;
@@ -216,6 +219,10 @@ iframe {
 .showcase p {
   font-size: 20px;
 }
+
+:focus {
+	outline: none;
+}
 /*css body leiding*/
 .leiding {
   padding-left: 10px;
@@ -233,47 +240,47 @@ iframe {
   padding-left: 4px;
   max-width: 115px;
 }
+.verantwoordelijken:hover h3 {
+  background-color: #7b0d1d;
+}
+.verantwoordelijken:hover a{
+  color: #7b0d1d;
+}
 .kiekeboes:hover h3 {
   background-color: #6032ac;
 }
-.kiekeboes:hover a {
+.kiekeboes:hover a{
   color: #6032ac;
 }
 .speelclub:hover h3 {
   background-color: #d2aa0b;
 }
-.speelclub:hover a {
+.speelclub:hover a{
   color: #d2aa0b;
 }
 .rakwis:hover h3 {
   background-color: #008A54;
 }
-.rakwis:hover a {
+.rakwis:hover a{
   color: #008A54;
 }
 .titos:hover h3 {
   background-color: #bc0032;
 }
-.titos:hover a {
+.titos:hover a{
   color: #bc0032;
 }
 .ketis:hover h3 {
   background-color: #0367a3;
 }
-.ketis:hover a {
+.ketis:hover a{
   color: #0367a3;
 }
 .aspis:hover h3 {
   background-color: #dd7920;
 }
-.aspis:hover a {
+.aspis:hover a{
   color: #dd7920;
-}
-.verantwoordelijken:hover h3 {
-  background-color: #7b0d1d;
-}
-.verantwoordelijken:hover a {
-  color: #7b0d1d;
 }
 /*css body lid worden*/
 main {
