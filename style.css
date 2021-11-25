@@ -34,6 +34,7 @@ light link color: #ACCEFF*/
   float: left;
 }
 header {
+	width: 100%;
   background: var(--secondary);
   color: white;
   min-height: 70px;
