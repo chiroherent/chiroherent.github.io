@@ -138,6 +138,16 @@ h1 {
   color: black;
   font-weight: bold;
 }
+h2 {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.4rem;
+  color: black;
+  font-weight: bold;
+}
 button {
   background-color: #F0F0F0;
   border: 1px solid #AAAAAA;
@@ -197,11 +207,6 @@ button:hover, button:focus-visible {
 iframe {
   margin-bottom: 1px;
 }
-#imgtxt {
-  color: white;
-  padding-top: 25px;
-  text-shadow: 1px 1px #060102;
-}
 .showcase {
   background: no-repeat;
   background-size: cover;
@@ -212,13 +217,21 @@ iframe {
   border-bottom: var(--primary) 3px solid;
   margin-bottom: 30px;
 }
-.showcase h1 {
+.showcasetext {
+  color: white;
+  text-shadow: 1px 1px #060102;
+	  font-weight: bold;
+}
+h1.showcasetext {
+	 padding-top: 25px;
   margin-top: 100px;
   font-size: 55px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
-.showcase p {
+p.showcasetext {
+	margin-top: 5px;
   font-size: 20px;
+	padding-bottom: 25px;
 }
 
 :focus {
