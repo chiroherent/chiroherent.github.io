@@ -129,7 +129,7 @@ a:focus {
 
 /*css body index*/
 p {
-  font-size: 15px;
+  font-size: 1rem;
   color: black;
   font-weight: normal;
 }
@@ -251,8 +251,8 @@ p.showcasetext {
 .leiding h3 {
   color: white;
   background-color: var(--chiblauw);
-  padding-left: 4px;
-  max-width: 115px;
+  padding-left: 0.5rem;
+  max-width: 10.1rem;
 }
 .verantwoordelijken:hover h3 {
   background-color: #7b0d1d;
@@ -261,40 +261,40 @@ p.showcasetext {
   color: #7b0d1d;
 }
 .kiekeboes:hover h3 {
-  background-color: #6032ac;
+  background-color: #53169b;
 }
 .kiekeboes:hover a{
-  color: #6032ac;
+  color: #53169b;
 }
 .speelclub:hover h3 {
-  background-color: #d2aa0b;
+  background-color: #d7a504;
 }
 .speelclub:hover a{
-  color: #d2aa0b;
+  color: #d7a504;
 }
 .rakwis:hover h3 {
-  background-color: #008A54;
+  background-color: #008535;
 }
 .rakwis:hover a{
-  color: #008A54;
+  color: #008535;
 }
 .titos:hover h3 {
-  background-color: #bc0032;
+  background-color: #bc0000;
 }
 .titos:hover a{
-  color: #bc0032;
+  color: #bc0000;
 }
 .ketis:hover h3 {
-  background-color: #0367a3;
+  background-color: #035ca3;
 }
 .ketis:hover a{
-  color: #0367a3;
+  color: #035ca3;
 }
 .aspis:hover h3 {
-  background-color: #dd7920;
+  background-color: #d3690e;
 }
 .aspis:hover a{
-  color: #dd7920;
+  color: #d3690e;
 }
 /*css body lid worden*/
 main {
