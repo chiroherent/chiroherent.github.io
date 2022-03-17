@@ -1,4 +1,4 @@
-# chiroherent.github.io
+# chiroherent.be
 Oh wat zou het handig zijn om een readme te hebben voor als iemand hier aan zou werken, maar daar heb ik toch helemaal geen tijd voor.
 
 In de plaats zal ik een lijstje maken met dingen die nog moeten gebeuren:
@@ -10,4 +10,5 @@ In de plaats zal ik een lijstje maken met dingen die nog moeten gebeuren:
 - Hogere kwaliteit foto's erop zetten en misschien een nieuw logo
 - Nieuwe figuur met alle groepen + hun leeftijden maken
 - Download link voor de moetjeslezen?
+- De readme aanpassen voor volgende generaties website aanpassers
 - probably nog dingen die ik vergeten ben
