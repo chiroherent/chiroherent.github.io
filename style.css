@@ -6,6 +6,7 @@ css body index
 css body leiding
 css body lid worden
 css body verhuur
+css kampklok
 responsive css
 
 
@@ -324,6 +325,29 @@ main {
   padding-bottom: 20px;
   padding-top: 10px;
 }
+
+/*kampklok*/
+.centered
+{
+	text-align: center;
+}
+
+.kampklok
+{
+	color: white;
+	  text-shadow: 0.7px 0.7px black;
+}
+
+h2.kampklok
+{
+	font-size: 1.9rem;
+}
+
+p.kampklok
+{
+	font-size: 1.3rem;
+}
+
 /*responsive css*/
 @media only screen and (max-width: 386px) {
   .container {
