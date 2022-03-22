@@ -5,7 +5,6 @@ In de plaats zal ik een lijstje maken met dingen die nog moeten gebeuren:
 - Cleanup van sommige pagina's zodat de CSS zo generic mogelijk kan gebruikt worden
   - Zorgen dat de website beter werkt op smartphones
   - Zorgen dat de randen niet meer all over the place zijn
-  - Vooral de onderkant van de footer is for some reason kapot en dat heeft iets te maken met dat die links geen margin hebben
 - Eventueel zorgen dat de lijst met leiding met een spreadsheet kan aangepast worden en als dat werkt misschien ook de andere pagina's?
 - Hogere kwaliteit foto's erop zetten en misschien een nieuw logo
 - Nieuwe figuur met alle groepen + hun leeftijden maken
