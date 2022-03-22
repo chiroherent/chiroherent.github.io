@@ -9,8 +9,9 @@ css body verhuur
 css kampklok
 responsive css
 
+*/ 
 
-*/ :root {
+:root {
   --primary: #e51836;
   --secondary: #35424a;
   --chirood: #e51836;
@@ -35,7 +36,7 @@ light link color: #ACCEFF*/
   float: left;
 }
 header {
-	width: 100%;
+  width: 100%;
   background: var(--secondary);
   color: white;
   min-height: 70px;
@@ -82,7 +83,7 @@ nav a::before {
   top: 0;
   width: 0;
   transition: ease-in-out 150ms;
-	transition-property: width, color;
+  transition-property: width, color;
   max-width: 110px
 }
 nav a:hover::before, nav a:focus::before {
@@ -102,12 +103,15 @@ footer {
   text-align: center;
   border-top: var(--primary) 3px solid;
   margin-top: 30px;
+  padding-bottom: 30px;
 }
 footer p {
   color: white;
+  margin: 16px;
 }
 footer a {
-  color: #ACCEFF
+  color: #ACCEFF;
+  margin-bottom: 16px;
 }
 footer img {
   aspect-ratio: auto;
@@ -123,11 +127,9 @@ body {
 a {
   color: #004BA9;
 }
-
 a:focus {
   color: var(--primary);
 }
-
 /*css body index*/
 p {
   font-size: 1rem;
@@ -173,7 +175,6 @@ button:hover, button:focus-visible {
   box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
   color: #202124;
 }
-
 .indexmain {
   display: grid;
   grid-template-columns: 7fr 3fr;
@@ -221,22 +222,21 @@ iframe {
 .showcasetext {
   color: white;
   text-shadow: 1px 1px #060102;
-	  font-weight: bold;
+  font-weight: bold;
 }
 h1.showcasetext {
-	 padding-top: 25px;
+  padding-top: 25px;
   margin-top: 100px;
   font-size: 55px;
   margin-bottom: 5px;
 }
 p.showcasetext {
-	margin-top: 5px;
+  margin-top: 5px;
   font-size: 20px;
-	padding-bottom: 25px;
+  padding-bottom: 25px;
 }
-
 :focus {
-	outline: none;
+  outline: none;
 }
 /*css body leiding*/
 .leiding {
@@ -258,43 +258,43 @@ p.showcasetext {
 .verantwoordelijken:hover h3 {
   background-color: #7b0d1d;
 }
-.verantwoordelijken:hover a{
+.verantwoordelijken:hover a {
   color: #7b0d1d;
 }
 .kiekeboes:hover h3 {
   background-color: #53169b;
 }
-.kiekeboes:hover a{
+.kiekeboes:hover a {
   color: #53169b;
 }
 .speelclub:hover h3 {
   background-color: #d7a504;
 }
-.speelclub:hover a{
+.speelclub:hover a {
   color: #d7a504;
 }
 .rakwis:hover h3 {
   background-color: #008535;
 }
-.rakwis:hover a{
+.rakwis:hover a {
   color: #008535;
 }
 .titos:hover h3 {
   background-color: #bc0000;
 }
-.titos:hover a{
+.titos:hover a {
   color: #bc0000;
 }
 .ketis:hover h3 {
   background-color: #035ca3;
 }
-.ketis:hover a{
+.ketis:hover a {
   color: #035ca3;
 }
 .aspis:hover h3 {
   background-color: #d3690e;
 }
-.aspis:hover a{
+.aspis:hover a {
   color: #d3690e;
 }
 /*css body lid worden*/
@@ -325,29 +325,20 @@ main {
   padding-bottom: 20px;
   padding-top: 10px;
 }
-
 /*kampklok*/
-.centered
-{
-	text-align: center;
+.centered {
+  text-align: center;
 }
-
-.kampklok
-{
-	color: white;
-	  text-shadow: 0.7px 0.7px black;
+.kampklok {
+  color: white;
+  text-shadow: 0.7px 0.7px black;
 }
-
-h2.kampklok
-{
-	font-size: 1.9rem;
+h2.kampklok {
+  font-size: 1.9rem;
 }
-
-p.kampklok
-{
-	font-size: 1.3rem;
+p.kampklok {
+  font-size: 1.3rem;
 }
-
 /*responsive css*/
 @media only screen and (max-width: 386px) {
   .container {
