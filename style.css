@@ -128,6 +128,8 @@ main {
   max-width: 1200px;
   margin-left: auto;
 	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
   display: block;
 }
 a {
@@ -436,11 +438,6 @@ p.kampklok {
   }
 }
 @media only screen and (max-width: 900px) {
-	
-	main {
-	margin-left: 15px;
-	margin-right: 15px;
-	}
 	
   nav a {
     padding-right: 45px;
