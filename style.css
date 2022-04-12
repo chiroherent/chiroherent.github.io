@@ -130,7 +130,6 @@ main {
 	margin-right: auto;
 	padding-left: 15px;
 	padding-right: 15px;
-  display: block;
 }
 a {
   color: #004BA9;
@@ -341,6 +340,8 @@ h2.kampklok {
 p.kampklok {
   font-size: 1.3rem;
 }
+
+
 /*responsive css*/
 @media only screen and (max-width: 386px) {
   .container {
@@ -355,12 +356,6 @@ p.kampklok {
   }
   .container image {
     display: none;
-  }
-  main {
-    display: block;
-  }
-  .leidings {
-    grid-area: span 1 / span 6;
   }
   .verhuur iframe {
     display: none;
@@ -383,13 +378,8 @@ p.kampklok {
     padding-bottom: 10px;
     display: inline-block;
   }
-  main {
-    display: block;
-  }
+  
   .verhuur iframe {
-    display: none;
-  }
-  .showcase {
     display: none;
   }
 }
@@ -403,13 +393,7 @@ p.kampklok {
     padding-left: 20px;
     padding-bottom: 10px;
   }
-  .indexmain {
-    display: block;
-  }
   .verhuur iframe {
-    display: none;
-  }
-  .showcase {
     display: none;
   }
 }
@@ -433,9 +417,6 @@ p.kampklok {
   main {
     display: block;
   }
-  .showcase {
-    display: none;
-  }
 }
 @media only screen and (max-width: 900px) {
 	
@@ -454,9 +435,6 @@ p.kampklok {
     grid-column-gap: 2em;
   }
   .leidings {
-    grid-area: span 4 / span 2;
-  }
-  .showcase {
-    display: none;
+    grid-area: span 1 / span 6;
   }
 }
