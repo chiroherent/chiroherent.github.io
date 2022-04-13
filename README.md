@@ -1,17 +1,5 @@
 # chiroherent.be
 
-## To-do
-- Cleanup van sommige pagina's zodat de CSS zo generic mogelijk kan gebruikt worden
-  - Zorgen dat de website beter werkt op smartphones
-  - Het menu fixen, want janky
-  - Uiteindelijk zou alle html mooi en hetzelfde opgemaakt moeten zijn, en dan de css opnieuw overzichtelijk opmaken met telefoons als primaire gedachte en dan computers secundair, dus @media voor desktop.
-- Eventueel zorgen dat de lijst met leiding met een spreadsheet kan aangepast worden en als dat werkt misschien ook de andere pagina's?
-- Hogere kwaliteit foto's erop zetten en misschien een nieuw logo
-- Nieuwe figuur met alle groepen + hun leeftijden maken
-- probably nog dingen die ik vergeten ben
-
-
-
 ## Hoe pas ik de website aan?
 ### Een gids voor arme Chiro Herent leiding die deze taak hebben gekregen.
 #### (Momenteel is deze gids niet af en ook niet juist, woeps, ik heb het geschreven zoals het zou moeten worden in de toekomst)
@@ -31,3 +19,14 @@
 5. Zorg dat je ook met de tab knop door de pagina kan navigeren, en probeer zoveel mogelijk rekening te houden met screen readers en zo.
 6. Geef bestandsnamen (html, css, javascript, foto's...) liefst geen hoofdletters.
 7. Nog dingen die ik waarschijnlijk vergeten ben.
+
+	
+## To-do
+- Cleanup van sommige pagina's zodat de CSS zo generic mogelijk kan gebruikt worden
+  - Zorgen dat de website beter werkt op smartphones
+  - Het menu fixen, want janky
+  - Uiteindelijk zou alle html mooi en hetzelfde opgemaakt moeten zijn, en dan de css opnieuw overzichtelijk opmaken met telefoons als primaire gedachte en dan computers secundair, dus @media voor desktop.
+- Eventueel zorgen dat de lijst met leiding met een spreadsheet kan aangepast worden en als dat werkt misschien ook de andere pagina's?
+- Hogere kwaliteit foto's erop zetten en misschien een nieuw logo
+- Nieuwe figuur met alle groepen + hun leeftijden maken
+- probably nog dingen die ik vergeten ben
