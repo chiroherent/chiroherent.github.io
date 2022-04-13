@@ -1,21 +1,20 @@
 # chiroherent.be
-Oh wat zou het handig zijn om een readme te hebben voor als iemand hier aan zou werken, maar daar heb ik toch helemaal geen tijd voor.
 
-In de plaats zal ik een lijstje maken met dingen die nog moeten gebeuren:
+## To-do
 - Cleanup van sommige pagina's zodat de CSS zo generic mogelijk kan gebruikt worden
   - Zorgen dat de website beter werkt op smartphones
-  - Hamburger menu for mobile en gewoon het menu fixen in het algemeen
+  - Het menu fixen, want janky
   - Uiteindelijk zou alle html mooi en hetzelfde opgemaakt moeten zijn, en dan de css opnieuw overzichtelijk opmaken met telefoons als primaire gedachte en dan computers secundair, dus @media voor desktop.
 - Eventueel zorgen dat de lijst met leiding met een spreadsheet kan aangepast worden en als dat werkt misschien ook de andere pagina's?
 - Hogere kwaliteit foto's erop zetten en misschien een nieuw logo
 - Nieuwe figuur met alle groepen + hun leeftijden maken
 - probably nog dingen die ik vergeten ben
 
-Dit zal ik even hier zetten, want hamburger menu op mobiele versie: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
 
 
-Hoe pas ik de website aan? Een gids voor arme Chiro Herent leiding die deze taak hebben gekregen.
-(Momenteel is deze gids niet af en ook niet juist, woeps, ik heb het geschreven zoals het zou moeten worden in de toekomst)
+## Hoe pas ik de website aan?
+### Een gids voor arme Chiro Herent leiding die deze taak hebben gekregen.
+#### (Momenteel is deze gids niet af en ook niet juist, woeps, ik heb het geschreven zoals het zou moeten worden in de toekomst)
 1. Pas de lijst met leiding elk jaar aan.
 2. Werk zo generic mogelijk:
 	- Zorg dat alle pagina's zo dynamisch mogelijk zijn voor verschillende groottes van scherm.
