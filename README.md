@@ -20,7 +20,7 @@ Hoe pas ik de website aan? Een gids voor arme Chiro Herent leiding die deze taak
 2. Werk zo generic mogelijk:
 	- Zorg dat alle pagina's zo dynamisch mogelijk zijn voor verschillende groottes van scherm.
 	- Zorg dat de bestanden duidelijk blijven voor mensen die na jou de website moeten aanpassen.
-	- Tekst gaat tussen de <main> tags. Daar gebruik je voornamelijk <h3>, <p> en <img> voor resp. titels, tekst en afbeeldingen.
+	- Tekst gaat tussen de <main> tags. Daar gebruik je voornamelijk \<h3>, \<p> en \<img> voor resp. titels, tekst en afbeeldingen.
 	- Pas de opmaak liefst aan in de CSS file ipv bij de html.
 	- Geef liever een class dan een id aan een html object. Geef die class dan ook een naam die duidelijk is.
 	- Zorg dat de CSS zoveel mogelijk herbruikbaar is in gelijkaardige situaties.
