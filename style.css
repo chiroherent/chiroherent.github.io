@@ -11,6 +11,8 @@ responsive css
 
 */ 
 
+
+
 :root {
   --primary: #e51836;
   --secondary: #35424a;
@@ -93,6 +95,10 @@ header .huidig {
   color: var(--primary);
   font-weight: bold;
 }
+
+
+
+
 /*css footer*/
 footer {
   position: relative;
@@ -117,6 +123,10 @@ footer img {
   aspect-ratio: auto;
   height: 65px;
 }
+
+
+
+
 /*css body general*/
 body {
   margin: 0px auto;
@@ -137,6 +147,11 @@ a {
 a:focus {
   color: var(--primary);
 }
+
+
+
+
+
 /*css body index*/
 p {
   font-size: 1rem;
@@ -245,6 +260,10 @@ p.showcasetext {
 :focus {
   outline: none;
 }
+
+
+
+
 /*css body leiding*/
 .leiding {
   padding-left: 10px;
@@ -304,6 +323,10 @@ p.showcasetext {
 .aspis:hover a {
   color: #d3690e;
 }
+
+
+
+
 /*css body lid worden*/
 
 .lidworden {
@@ -313,6 +336,10 @@ p.showcasetext {
 .lidworden a {
   text-decoration: none;
 }
+
+
+
+
 /*css body verhuur*/
 .verhuur main {
   display: block;
@@ -340,6 +367,8 @@ h2.kampklok {
 p.kampklok {
   font-size: 1.3rem;
 }
+
+
 
 
 /*responsive css*/
@@ -437,4 +466,10 @@ p.kampklok {
   .leidings {
     grid-area: span 1 / span 6;
   }
+    .showcase {
+    min-height: 200px;
+  }
+  h1.showcasetext {
+    margin-top: 50px;
+}
 }
