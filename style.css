@@ -51,9 +51,20 @@ header::after {
   display: table;
   clear: both;
 }
+img.hamburger {
+  image-rendering: pixelated;
+  height: 30px;
+  aspect-ratio: 1;
+  float: right;
+  padding-top: 20px;
+  padding-bottom: auto;
+  display: none;
+  }
+
 nav {
   float: right;
-}
+  display: block;
+  }
 nav ul {
   margin: 0;
   padding: 0;
@@ -472,4 +483,10 @@ p.kampklok {
   h1.showcasetext {
     margin-top: 50px;
 }
+  nav {
+  display: none;
+  }
+  img.hamburger {
+  display: block;
+  }
 }
