@@ -1,12 +1,20 @@
 /* Van dit deel vanboven moet je afblijven tenzij je weet wat je aan het doen bent */
 
 function leiding(naam, email, telefoon) {
-	if (telefoon != null) {
-		return '<dt><strong>'+naam+'</strong></dt><dd><a href="mailto:'+email+'">'+email+'</a></dd><dd>'+telefoon+'</dd>';
-  } else {
-	  return '<dt><strong>'+naam+'</strong></dt><dd><a href="mailto:'+email+'">'+email+'</a></dd>';
+	var x = ''
+	if (naam != null) {
+		x += '<dt><strong>'+naam+'</strong></dt>';
+  } if (email != null) {
+	  x += '<dd><a href="mailto:'+email+'">'+email+'</a></dd>';
+  } if (telefoon != null) {
+	  x += '<dd>'+telefoon+'</dd>';
   }	
+	return x
 }
+
+
+
+
 
 
 /* vvvvvvvvvvvvvvvvvvvvvv VANAF HIER PAS JE AAN vvvvvvvvvvvvvvvvvvvvvv
@@ -17,7 +25,7 @@ Uiteindelijk zou het er moeten uitzien zoals hier:
 
 document.getElementById("groepsnaam").innerHTML = leiding("Naam", "email", "telefoonnummer")+leiding("Naam2", "email2", null);
 
-(als je geen telefoonnummer wil invullen zet je null zonder aanhalingstekens, als het nodig is kan daar ook iets anders dan een telefoonnummer)
+Als je in een vak niets wil invullen zet je null (zonder aanhalingstekens)
 
 Voor meerdere leiding moet je gewoon leiding(blablabla)+leiding(blablabla2)+leiding(blablabla3)+...
 

@@ -3,7 +3,7 @@
 ## Hoe pas ik de website aan?
 ### Een gids voor arme Chiro Herent leiding die deze taak hebben gekregen.
 #### (Momenteel is deze gids niet af en ook niet juist, woeps, ik heb het geschreven zoals het zou moeten worden in de toekomst)
-1. Pas de lijst met leiding elk jaar aan. Dat pas je aan in het document [leiding.js](leiding.js#L12), daar vind je ook meer uitleg.
+1. Pas de lijst met leiding elk jaar aan. Dat pas je aan in het document [leiding.js](leiding.js#L20), daar vind je ook meer uitleg.
 2. Werk zo generic mogelijk:
 	- Zorg dat alle pagina's zo dynamisch mogelijk zijn voor verschillende groottes van scherm.
 	- Zorg dat de bestanden duidelijk blijven voor mensen die na jou de website moeten aanpassen.
