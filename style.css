@@ -385,27 +385,6 @@ p.kampklok {
 
 
 /*responsive css*/
-@media only screen and (max-width: 386px) {
-  .container {
-    display: flex;
-    justify-content: center;
-  }
-  .container img {
-    display: none;
-  }
-  .container nav a {
-    padding-right: 30px;
-  }
-  .container image {
-    display: none;
-  }
-  .verhuur iframe {
-    display: none;
-  }
-  .showcase {
-    display: none;
-  }
-}
 @media only screen and (max-width: 490px) {
   .container nav img {
     display: none;
