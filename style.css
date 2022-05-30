@@ -16,9 +16,18 @@ responsive css
 :root {
   --primary: #e51836;
   --secondary: #202d3d;
+
   --chirood: #e51836;
   --chiblauw: #002c62;
   --chibeige: #e7d2ac;
+  
+  --verantwoordelijkenkleur: #7b0d1d;
+  --kiekeboekleur: #53169b;
+  --speelclubkleur: #d7a504;
+  --rakwikleur: #008535;
+  --titokleur: #bc0000;
+  --ketikleur: #035ca3;
+  --aspikleur:  #d3690e;
 }
 
 /* link color: #004BA9
@@ -322,7 +331,7 @@ p.showcasetext {
   padding-left: 10px;
   display: grid;
   grid-template-columns: repeat(3, 2fr);
-  grid-column-gap: 3em;
+  gap: 0 3em;
   max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
@@ -332,64 +341,64 @@ p.showcasetext {
 .leiding h3 {
   color: white;
   background-color: var(--chiblauw);
-  padding-left: 0.5rem;
+  padding: 0.2rem 0 0.2rem 0.5rem;
   max-width: 10.1rem;
 }
 
 .verantwoordelijken:hover h3 {
-  background-color: #7b0d1d;
+  background-color: var(--verantwoordelijkenkleur);
 }
 
 .verantwoordelijken:hover a {
-  color: #7b0d1d;
+  color: var(--verantwoordelijkenkleur);
 }
 
 .kiekeboes:hover h3 {
-  background-color: #53169b;
+  background-color: var(--kiekeboekleur);
 }
 
 .kiekeboes:hover a {
-  color: #53169b;
+  color: var(--kiekeboekleur);
 }
 
 .speelclub:hover h3 {
-  background-color: #d7a504;
+  background-color: var(--speelclubkleur);
 }
 
 .speelclub:hover a {
-  color: #d7a504;
+  color: var(--speelclubkleur);
 }
 
 .rakwis:hover h3 {
-  background-color: #008535;
+  background-color: var(--rakwikleur);
 }
 
 .rakwis:hover a {
-  color: #008535;
+  color: var(--rakwikleur);
 }
 
 .titos:hover h3 {
-  background-color: #bc0000;
+  background-color: var(--titokleur);
 }
 
 .titos:hover a {
-  color: #bc0000;
+  color: var(--titokleur);
 }
 
 .ketis:hover h3 {
-  background-color: #035ca3;
+  background-color: var(--ketikleur);
 }
 
 .ketis:hover a {
-  color: #035ca3;
+  color: var(--ketikleur);
 }
 
 .aspis:hover h3 {
-  background-color: #d3690e;
+  background-color: var(--aspikleur);
 }
 
 .aspis:hover a {
-  color: #d3690e;
+  color: var(--aspikleur);
 }
 
 
