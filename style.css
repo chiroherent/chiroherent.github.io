@@ -9,17 +9,18 @@ css body verhuur
 css kampklok
 responsive css
 
-*/ 
+*/
 
 
 
 :root {
   --primary: #e51836;
-  --secondary: #35424a;
+  --secondary: #202d3d;
   --chirood: #e51836;
   --chiblauw: #002c62;
   --chibeige: #e7d2ac;
 }
+
 /* link color: #004BA9
 light link color: #ACCEFF*/
 /*css header*/
@@ -28,6 +29,7 @@ light link color: #ACCEFF*/
   margin: auto;
   overflow: hidden;
 }
+
 .container img {
   height: 60px;
   aspect-ratio: 1;
@@ -37,6 +39,7 @@ light link color: #ACCEFF*/
   padding-top: 5px;
   float: left;
 }
+
 header {
   width: 100%;
   background: var(--secondary);
@@ -46,11 +49,13 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
+
 header::after {
   content: '';
   display: table;
   clear: both;
 }
+
 img.hamburger {
   image-rendering: pixelated;
   height: 30px;
@@ -59,17 +64,19 @@ img.hamburger {
   padding-top: 20px;
   padding-bottom: auto;
   display: none;
-  }
+}
 
 nav {
   float: right;
   display: block;
-  }
+}
+
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 nav li {
   display: inline-block;
   margin-left: 65px;
@@ -77,16 +84,20 @@ nav li {
   position: relative;
   top: 0%
 }
+
 nav a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
 }
-nav a:hover, nav a:focus {
+
+nav a:hover,
+nav a:focus {
   color: var(--primary);
   font-weight: bold;
 }
+
 nav a::before {
   content: '';
   display: block;
@@ -99,9 +110,12 @@ nav a::before {
   transition-property: width, color;
   max-width: 110px
 }
-nav a:hover::before, nav a:focus::before {
+
+nav a:hover::before,
+nav a:focus::before {
   width: 100%;
 }
+
 header .huidig {
   color: var(--primary);
   font-weight: bold;
@@ -122,14 +136,17 @@ footer {
   margin-top: 30px;
   padding-bottom: 30px;
 }
+
 footer p {
   color: white;
   margin: 16px;
 }
+
 footer a {
   color: #ACCEFF;
   margin-bottom: 16px;
 }
+
 footer img {
   aspect-ratio: auto;
   height: 65px;
@@ -142,19 +159,23 @@ footer img {
 body {
   margin: 0px auto;
   background: white;
-  font-family: 'Work Sans', sans-serif; /*Myriad Pro, Arial (Narrow), */
+  font-family: 'Work Sans', sans-serif;
+  /*Myriad Pro, Arial (Narrow), */
   font-weight: 600;
 }
+
 main {
   max-width: 1200px;
   margin-left: auto;
-	margin-right: auto;
-	padding-left: 15px;
-	padding-right: 15px;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
+
 a {
   color: #004BA9;
 }
+
 a:focus {
   color: var(--primary);
 }
@@ -169,23 +190,27 @@ p {
   color: black;
   font-weight: normal;
 }
+
 h1 {
   font-size: 18px;
   color: black;
   font-weight: bold;
 }
+
 h2 {
   font-size: 1.5rem;
   color: black;
   font-weight: bold;
 }
+
 h3 {
-	margin-top: 2.4rem;
-	margin-bottom: 1.4rem;	
+  margin-top: 2.4rem;
+  margin-bottom: 1.4rem;
   font-size: 1.4rem;
   color: black;
   font-weight: bold;
 }
+
 button {
   background-color: #F0F0F0;
   border: 1px solid #AAAAAA;
@@ -202,14 +227,18 @@ button {
   touch-action: manipulation;
   white-space: pre;
 }
+
 #faq div {
   padding: 5px;
 }
-button:hover, button:focus-visible {
+
+button:hover,
+button:focus-visible {
   border-color: var(--primary);
   box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
   color: #202124;
 }
+
 .indexmain {
   display: grid;
   grid-template-columns: 7fr 3fr;
@@ -218,6 +247,7 @@ button:hover, button:focus-visible {
   margin-right: auto;
   max-width: 1200px;
 }
+
 .indexmain img {
   height: auto;
   max-width: 400px;
@@ -225,25 +255,31 @@ button:hover, button:focus-visible {
   padding-bottom: 10px;
   overflow: hidden;
 }
+
 .maintitel {
   font-size: 25px;
   text-align: center;
 }
+
 .left {
   margin-right: 5px;
   text-align: left;
 }
+
 .left #takken {
   height: 167px;
   width: 470px;
 }
+
 .right {
   overflow: hidden;
   padding-bottom: 10px;
 }
+
 iframe {
   margin-bottom: 1px;
 }
+
 .showcase {
   background: no-repeat;
   background-size: cover;
@@ -254,22 +290,26 @@ iframe {
   border-bottom: var(--primary) 3px solid;
   margin-bottom: 30px;
 }
+
 .showcasetext {
   color: white;
   text-shadow: 1px 1px #060102;
   font-weight: bold;
 }
+
 h1.showcasetext {
   padding-top: 25px;
   margin-top: 100px;
   font-size: 55px;
   margin-bottom: 5px;
 }
+
 p.showcasetext {
   margin-top: 5px;
   font-size: 20px;
   padding-bottom: 25px;
 }
+
 :focus {
   outline: none;
 }
@@ -281,58 +321,73 @@ p.showcasetext {
 .leiding {
   padding-left: 10px;
   display: grid;
-  grid-template-columns: repeat(6, 2fr);
+  grid-template-columns: repeat(3, 2fr);
   grid-column-gap: 3em;
   max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
   font-size: 15px;
 }
+
 .leiding h3 {
   color: white;
   background-color: var(--chiblauw);
   padding-left: 0.5rem;
   max-width: 10.1rem;
 }
+
 .verantwoordelijken:hover h3 {
   background-color: #7b0d1d;
 }
+
 .verantwoordelijken:hover a {
   color: #7b0d1d;
 }
+
 .kiekeboes:hover h3 {
   background-color: #53169b;
 }
+
 .kiekeboes:hover a {
   color: #53169b;
 }
+
 .speelclub:hover h3 {
   background-color: #d7a504;
 }
+
 .speelclub:hover a {
   color: #d7a504;
 }
+
 .rakwis:hover h3 {
   background-color: #008535;
 }
+
 .rakwis:hover a {
   color: #008535;
 }
+
 .titos:hover h3 {
   background-color: #bc0000;
 }
+
 .titos:hover a {
   color: #bc0000;
 }
+
 .ketis:hover h3 {
   background-color: #035ca3;
 }
+
 .ketis:hover a {
   color: #035ca3;
 }
+
 .aspis:hover h3 {
   background-color: #d3690e;
 }
+
 .aspis:hover a {
   color: #d3690e;
 }
@@ -346,6 +401,7 @@ p.showcasetext {
   text-align: left;
   display: block;
 }
+
 .lidworden a {
   text-decoration: none;
 }
@@ -359,24 +415,30 @@ p.showcasetext {
   max-width: 1100px;
   overflow: hidden;
 }
+
 #infra {
   padding-top: 10px;
 }
+
 #hal {
   padding-bottom: 20px;
   padding-top: 10px;
 }
+
 /*kampklok*/
 .centered {
   text-align: center;
 }
+
 .kampklok {
   color: white;
   text-shadow: 0.7px 0.7px black;
 }
+
 h2.kampklok {
   font-size: 1.9rem;
 }
+
 p.kampklok {
   font-size: 1.3rem;
 }
@@ -389,9 +451,11 @@ p.kampklok {
   .container nav img {
     display: none;
   }
+
   .container header image {
     display: none;
   }
+
   .container nav a {
     justify-content: start;
     padding-right: 1px;
@@ -399,75 +463,91 @@ p.kampklok {
     padding-bottom: 10px;
     display: inline-block;
   }
-  
+
   .verhuur iframe {
     display: none;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .container nav ul li {
     width: 100%;
     padding-left: 0;
   }
+
   .container nav img {
     padding-right: 25px;
     padding-left: 20px;
     padding-bottom: 10px;
   }
+
   .verhuur iframe {
     display: none;
   }
 }
+
 @media only screen and (max-width: 700px) {
   .leiding {
     display: block;
   }
+
   .container nav ul li {
     float: left;
     display: inline;
     width: 100%;
   }
+
   .container nav img {
     padding-right: 30px;
     padding-left: 20px;
     padding-bottom: 10px;
   }
+
   .indexmain {
     display: block;
   }
+
   main {
     display: block;
   }
 }
+
 @media only screen and (max-width: 900px) {
-	
+
   nav a {
     padding-right: 45px;
     font-size: 15px;
     padding-left: 0;
   }
+
   nav img {
     padding-right: 100px;
     padding-left: 20px;
     padding-bottom: 10px;
   }
+
   .indexmain {
     grid-template-columns: 6fr 4fr;
     grid-column-gap: 2em;
   }
+
   .leidings {
     grid-area: span 1 / span 6;
   }
-    .showcase {
+
+  .showcase {
     min-height: 200px;
   }
+
   h1.showcasetext {
     margin-top: 50px;
-}
-  nav {
-  display: none;
   }
+
+  nav {
+    display: none;
+  }
+
   img.hamburger {
-  display: block;
+    display: block;
   }
 }

@@ -1,95 +1,99 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
-<head>
-<link href="https://fonts.googleapis.com/css?family=Work+Sans:300">
-<link rel="stylesheet" href="style.css">
-<meta charset="UTF-8">
-<title>Kampklok</title>
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body style="background-image: url('kampklokachtergrond.jpg');  background-size: 100% 300%; background-position: 00% 40%;">
 
-<div class="centered">
-<h2 id="kampkloktitel" class="kampklok" style="margin-top: 0.4rem">Kampklok</h2>
-<p id="kampklokuitleg" class="kampklok" style="margin-bottom: 0rem">Het kamp begint/eindigt over</p>
-<p id="kampkloktijd" class="kampklok"  style="margin: 0.2rem">trommelgeroffel</p>
-<p id="kampklokinfo" class="kampklok" style="font-weight: 700">Hopelijk tot snel op kamp!</p>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300">
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>Kampklok</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body
+	style="background-image: url('kampklokachtergrond.jpg');  background-size: 100% 300%; background-position: 00% 40%;">
+
+	<div class="centered">
+		<h2 id="kampkloktitel" class="kampklok" style="margin-top: 0.4rem">Kampklok</h2>
+		<p id="kampklokuitleg" class="kampklok" style="margin-bottom: 0rem">Het kamp begint/eindigt over</p>
+		<p id="kampkloktijd" class="kampklok" style="margin: 0.2rem">trommelgeroffel</p>
+		<p id="kampklokinfo" class="kampklok" style="font-weight: 700">Hopelijk tot snel op kamp!</p>
 	</div>
 
-<script>
-var vandaag = new Date();
+	<script>
+		var vandaag = new Date();
 
 
-if ((vandaag.getMonth() == 6 && vandaag.getDate() < 31) || (vandaag.getMonth() < 6)) //31 is de eerste dag na kamp, 6 is de maand van kamp-1
-{
-  var jaarvankamp = (vandaag.getFullYear());
-}
-else {
-  jaarvankamp = (vandaag.getFullYear()+1);
-}
+		if ((vandaag.getMonth() == 6 && vandaag.getDate() < 31) || (vandaag.getMonth() < 6)) //31 is de eerste dag na kamp, 6 is de maand van kamp-1
+		{
+			var jaarvankamp = (vandaag.getFullYear());
+		}
+		else {
+			jaarvankamp = (vandaag.getFullYear() + 1);
+		}
 
 
-var beginkamp = new Date(jaarvankamp, 6, 20, 7)
-var eindekamp = new Date(jaarvankamp, 6, 30, 18)
-var beginvoorkamp = new Date(jaarvankamp, 6, 17, 7)
+		var beginkamp = new Date(jaarvankamp, 6, 20, 7)
+		var eindekamp = new Date(jaarvankamp, 6, 30, 18)
+		var beginvoorkamp = new Date(jaarvankamp, 6, 17, 7)
 
 
 
-//tekstjes
-if (vandaag.getTime() > beginvoorkamp.getTime() && vandaag.getTime() < beginkamp.getTime()) //voorkamp, maar nog geen kamp
-{
-	document.getElementById("kampklokinfo").innerHTML = "Het is niet lang meer, de tenten worden al opgezet!";
-}
-else if (vandaag.getTime() > beginkamp.getTime() && vandaag.getTime() < eindekamp.getTime()) //kamp is bezig
-{
-	document.getElementById("kampklokinfo").innerHTML = "Het kamp is bezig, tijd om te spelen!";
-} 
-else if (vandaag.getTime() < eindekamp.getTime()-30240000000) //nog een tijdje na kamp, het getal i50 weken in millisec
-{
-	document.getElementById("kampklokinfo").innerHTML = "Het kamp is voorbij, hopelijk zien we jullie volgend jaar terug!";
-} 
-else //doorheen het jaar, eventueel kunnen we erbij zetten hoeveel nachtjes slapen dat nog is
-{
-	document.getElementById("kampklokinfo").innerHTML = "Nog " + ((Math.floor((beginkamp.getTime() - vandaag.getTime()) / (1000 * 60 * 60 * 24)))-1) + " nachtjes slapen";
-}
+		//tekstjes
+		if (vandaag.getTime() > beginvoorkamp.getTime() && vandaag.getTime() < beginkamp.getTime()) //voorkamp, maar nog geen kamp
+		{
+			document.getElementById("kampklokinfo").innerHTML = "Het is niet lang meer, de tenten worden al opgezet!";
+		}
+		else if (vandaag.getTime() > beginkamp.getTime() && vandaag.getTime() < eindekamp.getTime()) //kamp is bezig
+		{
+			document.getElementById("kampklokinfo").innerHTML = "Het kamp is bezig, tijd om te spelen!";
+		}
+		else if (vandaag.getTime() < eindekamp.getTime() - 30240000000) //nog een tijdje na kamp, het getal i50 weken in millisec
+		{
+			document.getElementById("kampklokinfo").innerHTML = "Het kamp is voorbij, hopelijk zien we jullie volgend jaar terug!";
+		}
+		else //doorheen het jaar, eventueel kunnen we erbij zetten hoeveel nachtjes slapen dat nog is
+		{
+			document.getElementById("kampklokinfo").innerHTML = "Nog " + ((Math.floor((beginkamp.getTime() - vandaag.getTime()) / (1000 * 60 * 60 * 24))) - 1) + " nachtjes slapen";
+		}
 
 
-//begint of eindigt over aanduiding
-if (vandaag.getTime() > beginkamp.getTime() && vandaag.getTime() < eindekamp.getTime()) //kamp bezig 
-{
-	document.getElementById("kampklokuitleg").innerHTML = "Het kamp duurt nog"
-}
-else //kamp niet bezig 
-{
-	document.getElementById("kampklokuitleg").innerHTML = "Het kamp begint over"
-}
-	
-	
-//aftelklok
-setInterval(function() {
-vandaag = new Date();
-	
-if (vandaag.getTime() > beginkamp.getTime() && vandaag.getTime() < eindekamp.getTime()) //kamp bezig 
-{
-	var timeleft = eindekamp.getTime() - vandaag.getTime();
-}
-else //kamp niet bezig 
-{
-	timeleft = beginkamp.getTime() - vandaag.getTime();
-}
+		//begint of eindigt over aanduiding
+		if (vandaag.getTime() > beginkamp.getTime() && vandaag.getTime() < eindekamp.getTime()) //kamp bezig 
+		{
+			document.getElementById("kampklokuitleg").innerHTML = "Het kamp duurt nog"
+		}
+		else //kamp niet bezig 
+		{
+			document.getElementById("kampklokuitleg").innerHTML = "Het kamp begint over"
+		}
 
-    
-var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
 
-document.getElementById("kampkloktijd").innerHTML = days + " dagen " + hours + " uur " + minutes + " minuten " + seconds + " seconden";
-	
-	}, 1000) //einde van interval
+		//aftelklok
+		setInterval(function () {
+			vandaag = new Date();
 
-</script>
+			if (vandaag.getTime() > beginkamp.getTime() && vandaag.getTime() < eindekamp.getTime()) //kamp bezig 
+			{
+				var timeleft = eindekamp.getTime() - vandaag.getTime();
+			}
+			else //kamp niet bezig 
+			{
+				timeleft = beginkamp.getTime() - vandaag.getTime();
+			}
+
+
+			var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+			document.getElementById("kampkloktijd").innerHTML = days + " dagen " + hours + " uur " + minutes + " minuten " + seconds + " seconden";
+
+		}, 1000) //einde van interval
+
+	</script>
 
 </body>
+
 </html>
