@@ -20,18 +20,20 @@ responsive css
   --chirood: #e51836;
   --chiblauw: #002c62;
   --chibeige: #e7d2ac;
-  
+
   --verantwoordelijkenkleur: #7b0d1d;
   --kiekeboekleur: #53169b;
   --speelclubkleur: #d7a504;
   --rakwikleur: #008535;
   --titokleur: #bc0000;
   --ketikleur: #035ca3;
-  --aspikleur:  #d3690e;
+  --aspikleur: #d3690e;
 }
 
 /* link color: #004BA9
 light link color: #ACCEFF*/
+
+
 /*css header*/
 .container {
   width: 80%;
@@ -158,7 +160,7 @@ footer a {
 
 footer img {
   aspect-ratio: auto;
-  height: 65px;
+  Width: 120px;
 }
 
 
@@ -259,7 +261,7 @@ button:focus-visible {
 
 .indexmain img {
   height: auto;
-  max-width: 400px;
+  max-width: min(100%, 400px);
   display: block;
   padding-bottom: 10px;
   overflow: hidden;
@@ -329,20 +331,33 @@ p.showcasetext {
 /*css body leiding*/
 .leiding {
   padding-left: 10px;
-  display: grid;
-  grid-template-columns: repeat(3, 2fr);
-  gap: 0 3em;
   max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2.4rem;
   font-size: 15px;
+  column-count: 3;
+  column-width: 270px;
+  -webkit-column-count: 3;
+  -webkit-column-width: 270px;
+}
+
+.leiding div {
+  display: block;
+  break-inside: avoid;
 }
 
 .leiding h3 {
   color: white;
   background-color: var(--chiblauw);
+  margin-top: 0;
+  margin-bottom: 1rem;
   padding: 0.2rem 0 0.2rem 0.5rem;
   max-width: 10.1rem;
+}
+
+.leiding dl {
+  margin-bottom: 2.4rem;
 }
 
 .verantwoordelijken:hover h3 {
@@ -538,10 +553,6 @@ p.kampklok {
   .indexmain {
     grid-template-columns: 6fr 4fr;
     grid-column-gap: 2em;
-  }
-
-  .leidings {
-    grid-area: span 1 / span 6;
   }
 
   .showcase {
