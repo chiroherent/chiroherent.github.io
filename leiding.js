@@ -35,7 +35,7 @@ Om het overzichtelijk te houden gebruik je best enters tussen verschillende leid
 document.getElementById("hoofdleiding").innerHTML =
 	leiding("Katoo Janssens", "katoojanssens@gmail.com", "0497 38 96 30")
 	+ leiding("Felix Soers", "felixsoers@gmail.com", "0479 81 42 06")
-	+ leiding("Heleen Stessens", "heleen.stessens", "0491 18 97 95")
+	+ leiding("Heleen Stessens", "heleen.stessens@gmail.com", "0491 18 97 95")
 	;
 
 document.getElementById("vb").innerHTML =
