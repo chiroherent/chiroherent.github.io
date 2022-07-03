@@ -138,7 +138,6 @@ header .huidig {
 /*css footer*/
 footer {
   position: relative;
-  height: 255px;
   width: 100%;
   background-color: var(--secondary);
   color: white;
@@ -155,7 +154,6 @@ footer p {
 
 footer a {
   color: #ACCEFF;
-  margin-bottom: 16px;
 }
 
 footer img {
@@ -181,6 +179,16 @@ main {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  display: block;
+  overflow: hidden;
+}
+
+main img {
+  height: auto;
+  max-width: min(100%, 400px);
+  display: block;
+  padding-bottom: 10px;
+  overflow: hidden;
 }
 
 a {
@@ -190,6 +198,7 @@ a {
 a:focus {
   color: var(--primary);
 }
+
 
 
 
@@ -259,14 +268,6 @@ button:focus-visible {
   max-width: 1200px;
 }
 
-.indexmain img {
-  height: auto;
-  max-width: min(100%, 400px);
-  display: block;
-  padding-bottom: 10px;
-  overflow: hidden;
-}
-
 .maintitel {
   font-size: 25px;
   text-align: center;
@@ -323,6 +324,30 @@ p.showcasetext {
 
 :focus {
   outline: none;
+}
+
+
+/*tabel met groepen*/
+
+.takken-table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+  max-width: 100%;
+}
+
+.takken-table td {
+  border-style: solid;
+  border-color: #c0c0c0;
+  border-width: 3px;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 6px 30px;
+  word-break: normal;
+  background-color: #49649d;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle
 }
 
 
@@ -434,12 +459,6 @@ p.showcasetext {
 
 
 /*css body verhuur*/
-.verhuur main {
-  display: block;
-  max-width: 1100px;
-  overflow: hidden;
-}
-
 #infra {
   padding-top: 10px;
 }
@@ -471,7 +490,7 @@ p.kampklok {
 
 
 /*responsive css*/
-@media only screen and (max-width: 490px) {
+@media only screen and (max-width: 900px) {
   .container nav img {
     display: none;
   }
@@ -491,9 +510,7 @@ p.kampklok {
   .verhuur iframe {
     display: none;
   }
-}
-
-@media only screen and (max-width: 600px) {
+  
   .container nav ul li {
     width: 100%;
     padding-left: 0;
@@ -508,9 +525,7 @@ p.kampklok {
   .verhuur iframe {
     display: none;
   }
-}
-
-@media only screen and (max-width: 700px) {
+  
   .leiding {
     display: block;
   }
@@ -529,14 +544,9 @@ p.kampklok {
 
   .indexmain {
     display: block;
+    grid-template-columns: 6fr 4fr;
+    grid-column-gap: 2em;
   }
-
-  main {
-    display: block;
-  }
-}
-
-@media only screen and (max-width: 900px) {
 
   nav a {
     padding-right: 45px;
@@ -548,11 +558,6 @@ p.kampklok {
     padding-right: 100px;
     padding-left: 20px;
     padding-bottom: 10px;
-  }
-
-  .indexmain {
-    grid-template-columns: 6fr 4fr;
-    grid-column-gap: 2em;
   }
 
   .showcase {
@@ -570,4 +575,8 @@ p.kampklok {
   img.hamburger {
     display: block;
   }
+
+  .takken-table td { 
+    padding: 6px 15px;
+}
 }
