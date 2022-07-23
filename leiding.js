@@ -54,7 +54,9 @@ document.getElementById("speelclub").innerHTML =
 	leiding("Hasse Casaer", "hasse.casaer@gmail.com", null)
 	+ leiding("Pixie Neyens", "pixie.neyens@hotmail.com", null)
 	+ leiding("Douwe Somers", "douwesomers@live.be", null)
-	+ leiding("Rens Deschryver", "rens.deschryver@gmail.com", null)
+	
+
+
 	+ leiding("Senne Beunen", "senne.beunen@gmail.com", null)
 	;
 
