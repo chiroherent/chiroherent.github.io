@@ -36,7 +36,7 @@ document.getElementById("hoofdleiding").innerHTML =
 leiding("Jur Melio", "jur.melio@hotmail.com", null)
 + leiding("Phil Huybens", "phil.huybens@outlook.com", null)
 	+ leiding("Lukas Verboven", "lukas.verboven@gmail.com", null)
-leiding("Katoo Janssens", "katoojanssens@gmail.com", "0497 38 96 30")
++ leiding("Katoo Janssens", "katoojanssens@gmail.com", "0497 38 96 30")
 	+ leiding("Felix Soers", "felixsoers@gmail.com", "0479 81 42 06")
 	+ leiding("Heleen Stessens", "heleen.stessens@gmail.com", "0491 18 97 95")
 	;
