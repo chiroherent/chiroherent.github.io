@@ -43,11 +43,11 @@ document.getElementById("vb").innerHTML =
 	;
 
 document.getElementById("kiekeboes").innerHTML =
-	leiding("Katoo Janssens", "katoojanssens@gmail.com", null)
+	leiding("Lukas Verboven", "lukas.verboven@gmail.com", null)
+	+ leiding("Yagon Hannot", "yagonhannotgus@gmail.com", null)
+	+ leiding("Katoo Janssens", "katoojanssens@gmail.com", null)
 	+ leiding("Anne-Sophie Hons", "annesophie.hons@hotmail.com", null)
 	+ leiding("Luna Neyens", "luna.neyens@hotmail.com", null)
-	+ leiding("Lukas Verboven", "lukas.verboven@gmail.com", null)
-	+ leiding("Yagon Hannot", "yagonhannotgus@gmail.com", null)
 	;
 
 document.getElementById("speelclub").innerHTML =
@@ -82,25 +82,25 @@ document.getElementById("toppers").innerHTML =
 	;
 
 document.getElementById("tiptiens").innerHTML =
-	leiding("Heleen Stessens", "heleen.stessens@gmail.com", null)
-	+ leiding("Pauline Poplemont", "paulinepoplemont@live.be", null)
+	leiding("Pauline Poplemont", "paulinepoplemont@live.be", null)
+	+ leiding("Heleen Stessens", "heleen.stessens@gmail.com", null)
 	+ leiding("Romee Coelst", "romeecoelst@hotmail.com", null)
 	;
 
 document.getElementById("kerels").innerHTML =
-	leiding("Robbe Resseler", "robberesseler@hotmail.com", null)
-	+ leiding("Dries Pollers", "dpollers@gmail.com", null)
+	leiding("Dries Pollers", "dpollers@gmail.com", null)
+	+ leiding("Robbe Resseler", "robberesseler@hotmail.com", null)
 	;
 
 document.getElementById("aspimeisjes").innerHTML =
-	leiding("Tine Vandenberghe", "tinevandenberghe0@gmail.com", null)
+	leiding("Luca Jacobs", "lucajacobs73@gmail.com", null)
+	+ leiding("Tine Vandenberghe", "tinevandenberghe0@gmail.com", null)
 	+ leiding("Kirsten Capoen", "kirsten.capoen@telenet.be", null)
-	+ leiding("Luca Jacobs", "lucajacobs73@gmail.com", null)
 	;
 
 document.getElementById("aspijongens").innerHTML =
-	leiding("Felix Soers", "felixsoers@gmail.com", null)
+	leiding("Xander De Kay", "Xander.dekay@gmail.com", null)
+	+ leiding("Felix Soers", "felixsoers@gmail.com", null)
 	+ leiding("Chiel Habils", "chiel.habils@hotmail.com", null)
-	+ leiding("Xander De Kay", "Xander.dekay@gmail.com", null)
 	;
 
