@@ -13,3 +13,12 @@ function hamburgerMenu() {
     x.style.display = "block";
   }
 }
+
+
+function pagina(naam, bestand) {
+	var y = ''
+  console.log(document.URL)
+	
+}
+
+/* Van dit deel hierboven moet je afblijven tenzij je weet wat je aan het doen bent */
