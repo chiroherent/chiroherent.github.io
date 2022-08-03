@@ -17,8 +17,22 @@ function hamburgerMenu() {
 
 function pagina(naam, bestand) {
 	var y = ''
-  console.log(document.URL)
-	
+  if (window.location.pathname.split("/").pop() == bestand || window.location.pathname.split("/").pop() == bestand.split(".").shift()) {
+    y = '<li class="huidig">' + naam + '</li>'
+  }
+  else {
+    y = '<li><a href="' + bestand + '">' + naam + '</a></li>'
+  }
+	return y
 }
 
-/* Van dit deel hierboven moet je afblijven tenzij je weet wat je aan het doen bent */
+/* Van het deel hierboven moet je afblijven tenzij je weet wat je aan het doen bent */
+
+document.getElementById("navbar").innerHTML = "<ul>"
+	+ pagina("HOME", "index.html")
+  + pagina("LEIDING", "leiding.html")
+  + pagina("LID WORDEN", "lidworden.html")
+  + pagina("VERHUUR", "verhuur.html")
+  + pagina("GOUDEN ZONDAGSKE", "goudenzondagske.html")
+
+  + "</ul>"
