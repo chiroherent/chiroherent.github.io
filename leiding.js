@@ -20,7 +20,7 @@ function leiding(naam, email, telefoon) {
 /* vvvvvvvvvvvvvvvvvvvvvv VANAF HIER PAS JE AAN vvvvvvvvvvvvvvvvvvvvvv
 
 
-Hieronder staat het deel dat je mag aanpassen, gewoon dat deel tussen de haakjes
+Hieronder staat het deel dat je mag aanpassen
 Uiteindelijk zou het er moeten uitzien zoals hier:
 
 document.getElementById("groepsnaam").innerHTML = leiding("Naam", "email", "telefoonnummer")+leiding("Naam2", "email2", null);
