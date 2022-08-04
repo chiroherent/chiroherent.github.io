@@ -15,7 +15,7 @@
     <div class="container">
       <a href="index.html"><img class="logo" src="chirologo.webp" alt="Chiro Herent" /></a>
       <img class="hamburger" src="hamburger.png" onclick="hamburgerMenu()" />
-      <nav id="navbar">
+      <nav id="navbar"> <!-- De navbar wordt bepaald door navbar.js en kan dus niet hier aangepast worden -->
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li class="huidig">LEIDING</li>
@@ -28,7 +28,7 @@
   <section class="showcase" style="background-image: url('leidingspagina.jpeg'); background-position: 50% 50%;">
     <h1 class="showcasetext">Leiding</h1>
   </section>
-  <div id="leiding" class="leiding">
+  <div id="leiding" class="leiding"> <!-- De info hier wordt bepaald door leiding.js en kan dus niet hier aangepast worden -->
     <div class="verantwoordelijken">
       <h3>Hoofdleiding</h3>
       <dl id="hoofdleiding">
@@ -113,8 +113,8 @@
     <img src="fairtrade.png" alt="Fairtrade Gemeente"/>
     <p><a class="email" href="mailto:leiding.chiroherent@gmail.com" target="_top">leiding.chiroherent@gmail.com</a></p>
   </footer>
-  <script src="navbar.js"></script>
-  <script src="leiding.js"></script>
+  <script src="navbar.js"></script> <!-- navbar.js zorgt voor het hamburger menu op smalle schermen en bepaalt de lijst met pagina's in de navbar -->
+  <script src="leiding.js"></script> <!-- leiding.js bepaalt de lijst met welke leiding in welke groep zit en hun e-mail en zo -->
 </body>
 
 </html>
