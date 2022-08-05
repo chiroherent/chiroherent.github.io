@@ -55,6 +55,7 @@ document.getElementById("speelclub").innerHTML =
 	+ leiding("Pixie Neyens", "pixie.neyens@hotmail.com", null)
 	+ leiding("Douwe Somers", "douwesomers@live.be", null)
 	+ leiding("Senne Beunen", "senne.beunen@gmail.com", null)
+	+ leiding("Rens Deschryver", "rens.deschryver@gmail.com", null)
 	;
 
 document.getElementById("kwikken").innerHTML =
@@ -90,6 +91,7 @@ document.getElementById("tiptiens").innerHTML =
 document.getElementById("kerels").innerHTML =
 	leiding("Dries Pollers", "dpollers@gmail.com", null)
 	+ leiding("Robbe Resseler", "robberesseler@hotmail.com", null)
+	+ leiding("Wouter Capoen", "capoenwouter@gmail.com", null)
 	;
 
 document.getElementById("aspimeisjes").innerHTML =
