@@ -33,9 +33,9 @@ Om het overzichtelijk te houden gebruik je best enters tussen verschillende leid
 */
 
 document.getElementById("hoofdleiding").innerHTML =
-	leiding("Jur Melio", "jur.melio@hotmail.com", null) /* "0487 89 87 34" */
-	+ leiding("Phil Huybens", "phil.huybens@outlook.com", null) /* "0472 10 54 48" */
-	+ leiding("Lukas Verboven", "lukas.verboven@gmail.com", null) /* "0484 51 04 85" */
+	leiding("Jur Melio", "jur.melio@hotmail.com", "0487 89 87 34") /* "0487 89 87 34" */
+	+ leiding("Phil Huybens", "phil.huybens@outlook.com", "0472 10 54 48") /* "0472 10 54 48" */
+	+ leiding("Lukas Verboven", "lukas.verboven@gmail.com", "0484 51 04 85") /* "0484 51 04 85" */
 	;
 
 document.getElementById("vb").innerHTML =
@@ -43,66 +43,65 @@ document.getElementById("vb").innerHTML =
 	;
 
 document.getElementById("kiekeboes").innerHTML =
-	leiding("Lukas Verboven", "lukas.verboven@gmail.com", null)
-	+ leiding("Yagon Hannot", "yagonhannotgus@gmail.com", null)
-	+ leiding("Katoo Janssens", "katoojanssens@gmail.com", null)
-	+ leiding("Anne-Sophie Hons", "annesophie.hons@hotmail.com", null)
-	+ leiding("Luna Neyens", "luna.neyens@hotmail.com", null)
+	leiding("Elle Wouters", "ellewouters@gmail.com", null)
+	+ leiding("Mette Couvreur", "mette.couvreur@hotmail.com", null)
+	+ leiding("Xander De Kay", "Xander.dekay@gmail.com", null)
+	+ leiding("Gijs Puttemans", "gijs.puttemans20@gmail.com", null)
+	+ leiding("Lara Stulens", "", null)
 	;
 
 document.getElementById("speelclub").innerHTML =
-	leiding("Hasse Casaer", "hasse.casaer@gmail.com", null)
-	+ leiding("Pixie Neyens", "pixie.neyens@hotmail.com", null)
-	+ leiding("Douwe Somers", "douwesomers@live.be", null)
-	+ leiding("Senne Beunen", "senne.beunen@gmail.com", null)
-	+ leiding("Rens Deschryver", "rens.deschryver@gmail.com", null)
+	leiding("Janne Boogaerts", "janneboogaerts@gmail.com", null)
+	+ leiding("Broos Cornelis", "", null)
+	+ leiding("Siko Couvreur", "", null)
+	+ leiding("Jorre Wyffels", "", null)
+	+ leiding("Hannah Stoefs", "", null)
 	;
 
 document.getElementById("kwikken").innerHTML =
-	leiding("Esmée Devlieger", "esmeedevlieger@gmail.com", null)
-	+ leiding("Mette Couvreur", "mette.couvreur@hotmail.com", null)
-	+ leiding("Niels Malliet", "niels.malliet@gmail.com", null)
+	leiding("Loïs Huybens", "", null)
+	+ leiding("Douwe Somers", "douwesomers@live.be", null)
+	+ leiding("Anke Goyens", "", null)
 	;
 
 document.getElementById("rakkers").innerHTML =
-	leiding("Phil Huybens", "phil.huybens@outlook.com", null)
-	+ leiding("Alizée Jacobs", "alizee.jacobs@hotmail.be", null)
-	+ leiding("Gijs Puttemans", "gijs.puttemans20@gmail.com", null)
+	leiding("Jur Melio", "jur.melio@hotmail.com", null)
+	+ leiding("Phil Huybens", "phil.huybens@outlook.com", null)
+	+ leiding("Dries Pollers", "dpollers@gmail.com", null)
 	;
 
 document.getElementById("tippers").innerHTML =
-	leiding("Elle Wouters", "ellewouters@gmail.com", null)
-	+ leiding("Jur Melio", "jur.melio@hotmail.com", null)
-	+ leiding("Daan Cornet", "cornet.daanbm@gmail.com", null)
+	leiding("Hasse Casaer", "hasse.casaer@gmail.com", null)
+	+ leiding("Han Resseler", "", null)
+	+ leiding("Bente Joris", "", null)
 	;
 
 document.getElementById("toppers").innerHTML =
-	leiding("Wannes Dirix", "wannes.dirix@gmail.com", null)
-	+ leiding("Janne Boogaerts", "janneboogaerts@gmail.com", null)
-	+ leiding("Elgar Suy", "elgarsvb@gmail.com", null)
+	leiding("Elgar Suy", "elgarsvb@gmail.com", null)
+	+ leiding("Niels Malliet", "niels.malliet@gmail.com", null)
+	+ leiding("Rens Deschryver", "rens.deschryver@gmail.com", null)
 	;
 
 document.getElementById("tiptiens").innerHTML =
-	leiding("Pauline Poplemont", "paulinepoplemont@live.be", null)
-	+ leiding("Heleen Stessens", "heleen.stessens@gmail.com", null)
-	+ leiding("Romee Coelst", "romeecoelst@hotmail.com", null)
+	leiding("Alizée Jacobs", "alizee.jacobs@hotmail.be", null)
+	+ leiding("Wouter Capoen", "capoenwouter@gmail.com", null)
+	+ leiding("Sara Jacobs", "", null)
 	;
 
 document.getElementById("kerels").innerHTML =
-	leiding("Dries Pollers", "dpollers@gmail.com", null)
-	+ leiding("Robbe Resseler", "robberesseler@hotmail.com", null)
-	+ leiding("Wouter Capoen", "capoenwouter@gmail.com", null)
+	leiding("Luca Jacobs", "lucajacobs73@gmail.com", null)
+	+ leiding("Lukas Verboven", "lukas.verboven@gmail.com", null)
 	;
 
 document.getElementById("aspimeisjes").innerHTML =
-	leiding("Luca Jacobs", "lucajacobs73@gmail.com", null)
-	+ leiding("Tine Vandenberghe", "tinevandenberghe0@gmail.com", null)
-	+ leiding("Kirsten Capoen", "kirsten.capoen@telenet.be", null)
+	leiding("Pauline Poplemont", "paulinepoplemont@live.be", null)
+	+ leiding("Pixie Neyens", "pixie.neyens@hotmail.com", null)
+	+ leiding("Yagon Hannot", "yagonhannotgus@gmail.com", null)
 	;
 
 document.getElementById("aspijongens").innerHTML =
-	leiding("Xander De Kay", "Xander.dekay@gmail.com", null)
-	+ leiding("Felix Soers", "felixsoers@gmail.com", null)
-	+ leiding("Chiel Habils", "chiel.habils@hotmail.com", null)
+	leiding("Wannes Dirix", "wannes.dirix@gmail.com", null)
+	+ leiding("Esmée Devlieger", "esmeedevlieger@gmail.com", null)
+	+ leiding("Senne Beunen", "senne.beunen@gmail.com", null)
 	;
 
