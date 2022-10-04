@@ -6,16 +6,17 @@
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <title>Leiding - Chiro Herent</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width+device-width, initial-scale=1.0">
 </head>
 
 <body>
   <header>
     <div class="container">
-      <a href="index.html"><img class="logo" src="chirologo.webp" alt="Chiro Herent" /></a>
-      <img class="hamburger" src="hamburger.png" onclick="hamburgerMenu()" />
-      <nav id="navbar"> <!-- De navbar wordt bepaald door navbar.js en kan dus niet hier aangepast worden -->
+      <a href="index.html"><img class="logo" src="media/chirologo.webp" alt="Chiro Herent" /></a>
+      <img class="hamburger" src="media/hamburger.png" onclick="hamburgerMenu()" />
+      <nav id="navbar">
+        <!-- De navbar wordt bepaald door script/navbar.js en kan dus niet hier aangepast worden -->
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li class="huidig">LEIDING</li>
@@ -25,10 +26,11 @@
       </nav>
     </div>
   </header>
-  <section class="showcase" style="background-image: url('leidingspagina.jpeg'); background-position: 50% 50%;">
+  <section class="showcase" style="background-image: url('media/leidingspagina.jpg'); background-position: 50% 50%;">
     <h1 class="showcasetext">Leiding</h1>
   </section>
-  <div id="leiding" class="leiding"> <!-- De info hier wordt bepaald door leiding.js en kan dus niet hier aangepast worden -->
+  <div id="leiding" class="leiding">
+    <!-- De info hier wordt bepaald door script/leiding.js en kan dus niet hier aangepast worden -->
     <div class="verantwoordelijken">
       <h3>Hoofdleiding</h3>
       <dl id="hoofdleiding">
@@ -46,7 +48,7 @@
     <div class="kiekeboes">
       <h3>Kiekeboes</h3>
       <dl id="kiekeboes">
-        <dt><strong>Of lees de functies op chiroherent.be/leiding.js</strong></dt>
+        <dt><strong>Of lees de functies op chiroherent.be/script/leiding.js</strong></dt>
         <dd><a href="">mail@example.com</a></dd>
       </dl>
     </div>
@@ -110,11 +112,13 @@
     <p>Chiro Herent</p>
     <p><a class="maps" href="https://goo.gl/maps/Uh1MN5SQFpmxxETr8">Broekveldstraat 33</a></p>
     <p>3020 Herent</p>
-    <img src="fairtrade.png" alt="Fairtrade Gemeente"/>
+    <img src="media/fairtrade.png" alt="Fairtrade Gemeente" />
     <p><a class="email" href="mailto:leiding.chiroherent@gmail.com" target="_top">leiding.chiroherent@gmail.com</a></p>
   </footer>
-  <script src="navbar.js"></script> <!-- navbar.js zorgt voor het hamburger menu op smalle schermen en bepaalt de lijst met pagina's in de navbar -->
-  <script src="leiding.js"></script> <!-- leiding.js bepaalt de lijst met welke leiding in welke groep zit en hun e-mail en zo -->
+  <script src="script/navbar.js"></script>
+  <!-- navbar.js zorgt voor het hamburger menu op smalle schermen en bepaalt de lijst met pagina's in de navbar -->
+  <script src="script/leiding.js"></script>
+  <!-- leiding.js bepaalt de lijst met welke leiding in welke groep zit en hun e-mail en zo -->
 </body>
 
 </html>

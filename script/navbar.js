@@ -28,6 +28,8 @@ function pagina(naam, bestand) {
 	return y
 }
 
+console.log("loaded navbar.js")
+
 
 /* vvvvvvvvvvvvvvvvvvvvvv VANAF HIER PAS JE AAN vvvvvvvvvvvvvvvvvvvvvv
 Hieronder staat het deel dat je mag aanpassen
