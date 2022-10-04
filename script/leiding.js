@@ -12,7 +12,7 @@ function leiding(naam, email, telefoon) {
 	return x
 }
 
-
+console.log("loaded leiding.js")
 
 
 

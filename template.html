@@ -6,16 +6,17 @@
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <title>Chiro Herent</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
   <header>
     <div class="container">
-      <a href="index.html"><img class="logo" src="chirologo.webp" alt="Chiro Herent" /></a>
-      <img class="hamburger" src="hamburger.png" onclick="hamburgerMenu()" />
-      <nav id="navbar"> <!-- De navbar wordt bepaald door navbar.js en kan dus niet van hier aangepast worden -->
+      <a href="index.html"><img class="logo" src="media/chirologo.webp" alt="Chiro Herent" /></a>
+      <img class="hamburger" src="media/hamburger.png" onclick="hamburgerMenu()" />
+      <nav id="navbar">
+        <!-- De navbar wordt bepaald door script/navbar.js en kan dus niet van hier aangepast worden -->
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="leiding.html">LEIDING</a></li>
@@ -25,7 +26,7 @@
       </nav>
     </div>
   </header>
-  <section class="showcase" style="background-image: url('verhuur.jpg'); background-position: 50% 50%;">
+  <section class="showcase" style="background-image: url('media/verhuur.jpg'); background-position: 50% 50%;">
     <h1 class="showcasetext">Titel op foto</h1>
   </section>
   <div class="verhuur">
@@ -41,10 +42,11 @@
     <p>Chiro Herent</p>
     <p><a class="maps" href="https://goo.gl/maps/Uh1MN5SQFpmxxETr8">Broekveldstraat 33</a></p>
     <p>3020 Herent</p>
-    <img src="fairtrade.png" alt="Fairtrade Gemeente" />
+    <img src="media/fairtrade.png" alt="Fairtrade Gemeente" />
     <p><a class="email" href="mailto:leiding.chiroherent@gmail.com" target="_top">leiding.chiroherent@gmail.com</a></p>
   </footer>
-  <script src="navbar.js"></script> <!-- navbar.js zorgt voor het hamburger menu op smalle schermen en bepaalt de lijst met pagina's in de navbar -->
+  <script src="script/navbar.js"></script>
+  <!-- navbar.js zorgt voor het hamburger menu op smalle schermen en bepaalt de lijst met pagina's in de navbar -->
 </body>
 
 </html>
