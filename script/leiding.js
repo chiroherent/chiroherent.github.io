@@ -73,7 +73,7 @@ document.getElementById("rakkers").innerHTML =
 document.getElementById("tippers").innerHTML =
 	leiding("Hasse Casaer", "hasse.casaer@gmail.com", null)
 	+ leiding("Han Resseler", "resselerh@gmail.com", null)
-	+ leiding("Bente Joris", "", null)
+	+ leiding("Bente Joris", "bentejoris@gmail.com", null)
 	;
 
 document.getElementById("toppers").innerHTML =
