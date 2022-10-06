@@ -59,9 +59,9 @@ document.getElementById("speelclub").innerHTML =
 	;
 
 document.getElementById("kwikken").innerHTML =
-	leiding("Loïs Huybens", "", null)
+	leiding("Loïs Huybens", "lois.huybens@outlook.com ", null)
 	+ leiding("Douwe Somers", "douwesomers@live.be", null)
-	+ leiding("Anke Goyens", "", null)
+	+ leiding("Anke Goyens", "goyensanke@yahoo.com ", null)
 	;
 
 document.getElementById("rakkers").innerHTML =
@@ -72,7 +72,7 @@ document.getElementById("rakkers").innerHTML =
 
 document.getElementById("tippers").innerHTML =
 	leiding("Hasse Casaer", "hasse.casaer@gmail.com", null)
-	+ leiding("Han Resseler", "", null)
+	+ leiding("Han Resseler", "resselerh@gmail.com", null)
 	+ leiding("Bente Joris", "", null)
 	;
 
@@ -85,7 +85,7 @@ document.getElementById("toppers").innerHTML =
 document.getElementById("tiptiens").innerHTML =
 	leiding("Alizée Jacobs", "alizee.jacobs@hotmail.be", null)
 	+ leiding("Wouter Capoen", "capoenwouter@gmail.com", null)
-	+ leiding("Sara Jacobs", "", null)
+	+ leiding("Sara Jacobs", "jacobssara01@gmail.com", null)
 	;
 
 document.getElementById("kerels").innerHTML =
