@@ -43,7 +43,6 @@ light link color: #ACCEFF*/
 
 .container img {
   height: 60px;
-  aspect-ratio: 1;
   color: white;
   text-transform: uppercase;
   text-decoration: none;
@@ -70,7 +69,6 @@ header::after {
 img.hamburger {
   image-rendering: pixelated;
   height: 30px;
-  aspect-ratio: 1;
   float: right;
   padding-top: 20px;
   padding-bottom: auto;
@@ -153,11 +151,17 @@ footer p {
 }
 
 footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover, 
+footer a:focus-visible {
   color: #ACCEFF;
+  text-decoration: underline;
 }
 
 footer img {
-  aspect-ratio: auto;
   Width: 120px;
 }
 
@@ -582,4 +586,15 @@ p.kampklok {
   .takken-table td { 
     padding: 6px 15px;
 }
+}
+
+@media only screen and (min-width: 900px) {
+  footer{
+   display: flex;
+   padding: 15px 0 20px 0;
+   justify-content: center;
+  }
+  footer div img {
+    align-self: flex-end;
+  }
 }
