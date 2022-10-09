@@ -33,9 +33,9 @@ Om het overzichtelijk te houden gebruik je best enters tussen verschillende leid
 */
 
 document.getElementById("hoofdleiding").innerHTML =
-	leiding("Jur Melio", "jur.melio@hotmail.com", "0487 89 87 34") /* "0487 89 87 34" */
-	+ leiding("Phil Huybens", "phil.huybens@outlook.com", "0472 10 54 48") /* "0472 10 54 48" */
-	+ leiding("Lukas Verboven", "lukas.verboven@gmail.com", "0484 51 04 85") /* "0484 51 04 85" */
+	leiding("Jur Melio", "jur.melio@hotmail.com", null) /* "0487 89 87 34" */
+	+ leiding("Phil Huybens", "phil.huybens@outlook.com", null) /* "0472 10 54 48" */
+	+ leiding("Lukas Verboven", "lukas.verboven@gmail.com", null) /* "0484 51 04 85" */
 	;
 
 document.getElementById("vb").innerHTML =
