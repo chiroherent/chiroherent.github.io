@@ -47,14 +47,14 @@ document.getElementById("kiekeboes").innerHTML =
 	+ leiding("Mette Couvreur", "mette.couvreur@hotmail.com", null)
 	+ leiding("Xander De Kay", "Xander.dekay@gmail.com", null)
 	+ leiding("Gijs Puttemans", "gijs.puttemans20@gmail.com", null)
-	+ leiding("Lara Stulens", "", null)
+	+ leiding("Lara Stulens", "lara.stulens@gmail.com ", null)
 	;
 
 document.getElementById("speelclub").innerHTML =
 	leiding("Janne Boogaerts", "janneboogaerts@gmail.com", null)
-	+ leiding("Broos Cornelis", "", null)
-	+ leiding("Siko Couvreur", "", null)
-	+ leiding("Jorre Wyffels", "", null)
+	+ leiding("Broos Cornelis", "broosc2004@gmail.com", null)
+	+ leiding("Siko Couvreur", "siko.couvreur@gmail.com", null)
+	+ leiding("Jorre Wyffels", "jorrewyffels@gmail.com ", null)
 	+ leiding("Hannah Stoefs", "", null)
 	;
 
