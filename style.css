@@ -155,7 +155,7 @@ footer a {
   text-decoration: none;
 }
 
-footer a:hover, 
+footer a:hover,
 footer a:focus-visible {
   color: #ACCEFF;
   text-decoration: underline;
@@ -517,7 +517,7 @@ p.kampklok {
   .verhuur iframe {
     display: none;
   }
-  
+
   .container nav ul li {
     width: 100%;
     padding-left: 0;
@@ -532,7 +532,7 @@ p.kampklok {
   .verhuur iframe {
     display: none;
   }
-  
+
   .leiding {
     display: block;
   }
@@ -583,17 +583,19 @@ p.kampklok {
     display: block;
   }
 
-  .takken-table td { 
+  .takken-table td {
     padding: 6px 15px;
-}
+  }
 }
 
 @media only screen and (min-width: 900px) {
-  footer{
-   display: flex;
-   padding: 15px 0 20px 0;
-   justify-content: center;
+  footer {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px 0 20px 0;
   }
+
   footer div img {
     align-self: flex-end;
   }
