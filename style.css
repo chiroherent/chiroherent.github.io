@@ -41,13 +41,14 @@ light link color: #ACCEFF*/
   overflow: hidden;
 }
 
-.container img {
+header img.logo {
   height: 60px;
   color: white;
   text-transform: uppercase;
   text-decoration: none;
-  padding-top: 5px;
+  padding: 10px 0 10px 0;
   float: left;
+  filter: invert(21%) sepia(99%) saturate(5429%) hue-rotate(343deg) brightness(92%) contrast(95%);
 }
 
 header {
@@ -88,8 +89,7 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin-left: 65px;
-  padding-top: 23px;
+  padding: 32px 0 0 60px;
   position: relative;
   top: 0%;
   font-size: 15px;
@@ -117,7 +117,7 @@ nav a::before {
   width: 0;
   transition: ease-in-out 150ms;
   transition-property: width, color;
-  max-width: 110px
+  max-width: 110px;
 }
 
 nav a:hover::before,
@@ -155,7 +155,7 @@ footer a {
   text-decoration: none;
 }
 
-footer a:hover, 
+footer a:hover,
 footer a:focus-visible {
   color: #ACCEFF;
   text-decoration: underline;
@@ -163,6 +163,21 @@ footer a:focus-visible {
 
 footer img {
   Width: 120px;
+}
+
+img.fairtradegemeente:hover  {
+  opacity: 0 ;
+}
+
+div.fairtradegemeente {
+  background-image: url('media/fairtradekleur.png');
+  background-size: 0;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+div.fairtradegemeente:hover {
+  background-size: contain;
 }
 
 
@@ -499,6 +514,11 @@ p.kampklok {
 
 /*responsive css*/
 @media only screen and (max-width: 900px) {
+  
+  nav {
+    display: none;
+  }
+
   .container nav img {
     display: none;
   }
@@ -517,7 +537,7 @@ p.kampklok {
   .verhuur iframe {
     display: none;
   }
-  
+
   .container nav ul li {
     width: 100%;
     padding-left: 0;
@@ -532,7 +552,7 @@ p.kampklok {
   .verhuur iframe {
     display: none;
   }
-  
+
   .leiding {
     display: block;
   }
@@ -575,25 +595,23 @@ p.kampklok {
     margin-top: 50px;
   }
 
-  nav {
-    display: none;
-  }
-
   img.hamburger {
     display: block;
   }
 
-  .takken-table td { 
+  .takken-table td {
     padding: 6px 15px;
-}
+  }
 }
 
 @media only screen and (min-width: 900px) {
-  footer{
-   display: flex;
-   padding: 15px 0 20px 0;
-   justify-content: center;
+  footer {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px 0 20px 0;
   }
+
   footer div img {
     align-self: flex-end;
   }
