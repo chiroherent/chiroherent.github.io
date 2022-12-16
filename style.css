@@ -170,6 +170,7 @@ img.fairtradegemeente:hover  {
 }
 
 div.fairtradegemeente {
+  Width: 120px;
   background-image: url('media/fairtradekleur.png');
   background-size: 0;
   background-repeat: no-repeat;
@@ -601,6 +602,10 @@ p.kampklok {
 
   .takken-table td {
     padding: 6px 15px;
+  }
+
+  div.fairtradegemeente {
+    margin: 0 auto 0 auto;
   }
 }
 
