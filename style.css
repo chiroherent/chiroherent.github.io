@@ -41,13 +41,14 @@ light link color: #ACCEFF*/
   overflow: hidden;
 }
 
-.container img {
+header img.logo {
   height: 60px;
   color: white;
   text-transform: uppercase;
   text-decoration: none;
-  padding-top: 5px;
+  padding: 10px 0 10px 0;
   float: left;
+  filter: invert(21%) sepia(99%) saturate(5429%) hue-rotate(343deg) brightness(92%) contrast(95%);
 }
 
 header {
@@ -88,8 +89,7 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin-left: 65px;
-  padding-top: 23px;
+  padding: 32px 0 0 60px;
   position: relative;
   top: 0%;
   font-size: 15px;
@@ -117,7 +117,7 @@ nav a::before {
   width: 0;
   transition: ease-in-out 150ms;
   transition-property: width, color;
-  max-width: 110px
+  max-width: 110px;
 }
 
 nav a:hover::before,
@@ -163,6 +163,21 @@ footer a:focus-visible {
 
 footer img {
   Width: 120px;
+}
+
+img.fairtradegemeente:hover  {
+  opacity: 0 ;
+}
+
+div.fairtradegemeente {
+  background-image: url('media/fairtradekleur.png');
+  background-size: 0;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+div.fairtradegemeente:hover {
+  background-size: contain;
 }
 
 
@@ -499,6 +514,11 @@ p.kampklok {
 
 /*responsive css*/
 @media only screen and (max-width: 900px) {
+  
+  nav {
+    display: none;
+  }
+
   .container nav img {
     display: none;
   }
@@ -573,10 +593,6 @@ p.kampklok {
 
   h1.showcasetext {
     margin-top: 50px;
-  }
-
-  nav {
-    display: none;
   }
 
   img.hamburger {
