@@ -17,13 +17,13 @@ function hamburgerMenu() {
 }
 
 
-function pagina(naam, bestand) {
+function pagina(name, filename) {
 	var y = ''
-  if (window.location.pathname.split("/").pop() == bestand || window.location.pathname.split("/").pop() == bestand.split(".").shift()) {
-    y = '<li class="huidig">' + naam + '</li>';
+  if (window.location.pathname.split("/").pop() == filename || window.location.pathname.split("/").pop() == filename.split(".").shift()) {
+    y = '<li class="huidig">' + name + '</li>';
   }
   else {
-    y = '<li><a href="' + bestand + '">' + naam + '</a></li>';
+    y = '<li><a href="' + filename + '">' + name + '</a></li>';
   }
 	return y
 }
@@ -42,6 +42,10 @@ Je moet altijd iets invullen, anders werkt het niet
 Voor meerdere pagina's moet je gewoon +pagina(blablabla)+pagina(blablabla2)+pagina(blablabla3)+...
 Om het overzichtelijk te houden gebruik je best enters tussen verschillende pagina's.
 */
+
+if (window.location.pathname.split("/").pop() == '') {
+  window.history.replaceState(null,"Page", "/index");
+}
 
 document.getElementById("navbar").innerHTML = "<ul>"
 	+ pagina("HOME", "index.html")
