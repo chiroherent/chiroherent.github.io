@@ -165,21 +165,6 @@ footer img {
   Width: 120px;
 }
 
-img.fairtradegemeente:hover  {
-  opacity: 0 ;
-}
-
-div.fairtradegemeente {
-  background-image: url('media/fairtradekleur.png');
-  background-size: 0;
-  background-repeat: no-repeat;
-  opacity: 1;
-}
-
-div.fairtradegemeente:hover {
-  background-size: contain;
-}
-
 
 
 

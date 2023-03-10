@@ -1,11 +1,5 @@
 /* Van dit deel vanboven moet je afblijven tenzij je weet wat je aan het doen bent */
 
-/*
-<nav id="navbar">
-<img class="hamburger" src="hamburger.png" onclick="hamburgerMenu()"/>
-<script src="navbar.js"></script>
-*/
-
 /* change url to index.html when starting to make 'huidig' id work in setnavbarcontent() */
 if (window.location.pathname.split("/").pop() == '') {
   window.history.replaceState(null,"Page", "/index");
@@ -47,3 +41,9 @@ function hamburgerMenu() {
     x.style.display = "block";
   }
 }
+
+/*
+<nav id="navbar">
+<img class="hamburger" src="hamburger.png" onclick="hamburgerMenu()"/>
+<script src="navbar.js"></script>
+*/
