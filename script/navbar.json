@@ -1,0 +1,24 @@
+﻿{
+    "navbar": [
+        {
+            "title": "Home",
+            "filename": "index.html"
+        },
+        {
+            "title": "Leiding",
+            "filename": "leiding.html"
+        },
+        {
+            "title": "Lid Worden",
+            "filename": "lidworden.html"
+        },
+        {
+            "title": "Verhuur",
+            "filename": "verhuur.html"
+        },
+        {
+            "title": "Gouden Zondagske",
+            "filename": "goudenzondagske.html"
+        }
+    ]
+}
