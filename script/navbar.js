@@ -6,7 +6,39 @@
 <script src="navbar.js"></script>
 */
 
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+/* change url to index.html when starting to make 'huidig' id work in setnavbarcontent() */
+if (window.location.pathname.split("/").pop() == '') {
+  window.history.replaceState(null,"Page", "/index");
+}
+
+/* load JSON file */
+fetch('./script/navbar.json')
+  .then((response) => response.json())
+  .then((navbarJSON) => setnavbarcontent(navbarJSON));
+console.log("loaded navbar.js") 
+
+
+/* loads the content for the navbar from JSON */
+function setnavbarcontent(navbarJSON) {
+  const navbar = navbarJSON.navbar;
+  
+  var y = '', title, filename;
+    for (let page in navbar) {
+      title = navbar[page]['title'];
+      filename = navbar[page]['filename'];
+
+      if (window.location.pathname.split("/").pop() == filename || window.location.pathname.split("/").pop() == filename.split(".").shift()) {
+        y += '<li class="huidig">' + title + '</li>';
+      }
+      else {
+        y += '<li><a href="' + filename + '">' + title + '</a></li>';
+      }
+    }
+    document.getElementById("navbar").innerHTML = "<ul>" + y + "</ul>"
+  }
+
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu icon */
 function hamburgerMenu() {
   var x = document.getElementById("navbar");
   if (x.style.display === "block") {
@@ -15,39 +47,3 @@ function hamburgerMenu() {
     x.style.display = "block";
   }
 }
-
-
-function pagina(naam, bestand) {
-	var y = ''
-  if (window.location.pathname.split("/").pop() == bestand || window.location.pathname.split("/").pop() == bestand.split(".").shift()) {
-    y = '<li class="huidig">' + naam + '</li>';
-  }
-  else {
-    y = '<li><a href="' + bestand + '">' + naam + '</a></li>';
-  }
-	return y
-}
-
-console.log("loaded navbar.js")
-
-
-/* vvvvvvvvvvvvvvvvvvvvvv VANAF HIER PAS JE AAN vvvvvvvvvvvvvvvvvvvvvv
-Hieronder staat het deel dat je mag aanpassen
-
-Uiteindelijk zou het er moeten uitzien zoals hier:
-document.getElementById("navbar").innerHTML = "<ul>" + pagina("NAAM1", "naam1.html") + pagina("NAAM2", "naam2.html") ... + "</ul>"
-
-Je moet altijd iets invullen, anders werkt het niet
-
-Voor meerdere pagina's moet je gewoon +pagina(blablabla)+pagina(blablabla2)+pagina(blablabla3)+...
-Om het overzichtelijk te houden gebruik je best enters tussen verschillende pagina's.
-*/
-
-document.getElementById("navbar").innerHTML = "<ul>"
-	+ pagina("HOME", "index.html")
-	+ pagina("LEIDING", "leiding.html")
-	+ pagina("LID WORDEN", "lidworden.html")
-	+ pagina("VERHUUR", "verhuur.html")
-	+ pagina("GOUDEN ZONDAGSKE", "goudenzondagske.html")
-
-  + "</ul>"

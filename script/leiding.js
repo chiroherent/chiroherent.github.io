@@ -1,18 +1,17 @@
 /* Van dit deel moet je afblijven tenzij je weet wat je aan het doen bent */
 
-/* laadt het json bestand */
+/* load JSON file*/
 fetch('./script/leiding.json')
   .then((response) => response.json())
   .then((leidingJSON) => setpagecontent(leidingJSON));
 console.log("loaded leiding.js")
 
 
-/* laadt het json bestand en  zet de inhoud op leiding.html */
+/* put JSON content on page */
 function setpagecontent(leidingJSON) {
 const leiding = leidingJSON.leiding;
 
-
-var x, name, email, phone = ''
+var x, name, email, phone;
 for (let group in leiding) {
 	x = ''
 	for (let person in leiding[group]) {

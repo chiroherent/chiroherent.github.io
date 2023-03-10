@@ -93,12 +93,12 @@ nav li {
   position: relative;
   top: 0%;
   font-size: 15px;
+  text-transform: uppercase;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 nav a:hover,
