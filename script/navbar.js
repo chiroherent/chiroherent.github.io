@@ -42,6 +42,7 @@ function hamburgerMenu() {
   }
 }
 
+
 /*
 <nav id="navbar">
 <img class="hamburger" src="hamburger.png" onclick="hamburgerMenu()"/>

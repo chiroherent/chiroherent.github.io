@@ -89,10 +89,12 @@ nav ul {
 
 nav li {
   display: inline-block;
-  padding: 32px 0 0 60px;
+  margin: 0 0 0 60px;
+  padding: 32px 0 0 0;
   position: relative;
   top: 0%;
   font-size: 15px;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -117,7 +119,7 @@ nav a::before {
   width: 0;
   transition: ease-in-out 150ms;
   transition-property: width, color;
-  max-width: 110px;
+  max-width: 150px;
 }
 
 nav a:hover::before,
@@ -167,7 +169,6 @@ footer img {
 
 
 
-
 /*css body general*/
 body {
   margin: 0px auto;
@@ -209,7 +210,7 @@ a:focus {
 
 
 /*css body index*/
-p {
+p, li {
   font-size: 1rem;
   color: black;
   font-weight: normal;
@@ -586,6 +587,10 @@ p.kampklok {
 
   .takken-table td {
     padding: 6px 15px;
+  }
+
+  div.fairtradegemeente {
+    margin: 0 auto 0 auto;
   }
 }
 
