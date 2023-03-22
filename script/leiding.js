@@ -11,7 +11,7 @@ console.log("loaded leiding.js")
 function setpagecontent(leidingJSON) {
 const leiding = leidingJSON.leiding;
 
-var x, name, email, phone;
+let x, name, email, phone;
 for (let group in leiding) {
 	x = ''
 	for (let person in leiding[group]) {

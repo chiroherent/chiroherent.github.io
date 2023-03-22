@@ -16,7 +16,7 @@ console.log("loaded navbar.js")
 function setnavbarcontent(navbarJSON) {
   const navbar = navbarJSON.navbar;
   
-  var y = '', title, filename;
+  let y = '', title, filename;
     for (let page in navbar) {
       title = navbar[page]['title'];
       filename = navbar[page]['filename'];
@@ -34,7 +34,7 @@ function setnavbarcontent(navbarJSON) {
 
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu icon */
 function hamburgerMenu() {
-  var x = document.getElementById("navbar");
+  let x = document.getElementById("navbar");
   if (x.style.display === "block") {
     x.style.display = null;
   } else {
