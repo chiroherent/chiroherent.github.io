@@ -2,29 +2,181 @@
     "leiding": {
         "hoofdleiding": [
             {
-                "name": "Jur Melio",
-                "email": "jur.melio@hotmail.com",
-                "phonehidden": "0487 89 87 34"
-            },
-            {
-                "name": "Phil Huybens",
-                "email": "phil.huybens@outlook.com",
-                "phonehidden": "0472 10 54 48"
-            },
-            {
                 "name": "Lukas Verboven",
                 "email": "lukas.verboven@gmail.com",
                 "phonehidden": "0484 51 04 85"
+            },
+            {
+                "name": "Mette Couvreur",
+                "email": "mette.couvreur@hotmail.com",
+                "phonehidden": "+32 476 03 00 29"
+            },
+            {
+                "name": "Lara Stulens",
+                "email": "lara.stulens@gmail.com ",
+                "phonehidden": "+32 483 25 92 01"
             }
         ],
         "vb": [
             {
                 "name": "Lore Houben",
                 "email": "lorehouben@hotmail.com",
-                "phone": "0471 11 97 98"
+                "phone": "+32 471 11 97 98"
+            },
+            {
+                "name": "Freya Donceel",
+                "email": "freya_donceel@hotmail.com",
+                "phone": "+32 479 37 66 31"
             }
         ],
         "kiekeboes": [
+            {
+                "name": "Lara Stulens",
+                "email": "lara.stulens@gmail.com ",
+                "phone": null
+            },
+            {
+                "name": "Bente Joris",
+                "email": "bentejoris@gmail.com",
+                "phone": null
+            },
+            {
+                "name": "Bas Vander Vorst",
+                "email": "basvandervorst4@gmail.com",
+                "phone": null
+            },
+            {
+                "name": "Julie Poplemont",
+                "email": "juliepoplemont@live.be",
+                "phone": null
+            },
+            {
+                "name": "Mara Malliet",
+                "email": "mara.malliet@gmail.com",
+                "phone": null
+            }
+        ],
+        "speelclub": [
+            {
+                "name": "Alizée Jacobs",
+                "email": "alizee.jacobs@hotmail.be",
+                "phone": null
+            },
+            {
+                "name": "Pauline Poplemont",
+                "email": "paulinepoplemont@live.be",
+                "phone": null
+            },
+            {
+                "name": "Stien Debeuckelaer",
+                "email": "stiendebeuckelaer@gmail;com",
+                "phone": null
+            },
+            {
+                "name": "Hannah Schelfout Schaerlaekens",
+                "email": "",
+                "phone": null
+            },
+            {
+                "name": "Marianne Maes",
+                "email": "mariannemaes2005@gmail.com",
+                "phone": null
+            },
+            {
+                "name": "Luca Jacobs",
+                "email": "lucajacobs73@gmail.com",
+                "phone": null
+            }
+        ],
+        "kwikken": [
+            {
+                "name": "Sara Jacobs",
+                "email": "jacobssara01@gmail.com",
+                "phone": null
+            },
+            {
+                "name": "Janne Breesch",
+                "email": "breeschjanne@gmail.com",
+                "phone": null
+            },
+            {
+                "name": "Liese Uytterhoeven",
+                "email": "",
+                "phone": null
+            },
+            {
+                "name": "Rens Melio",
+                "email": "rens.melio@hotmail.com",
+                "phone": null
+            }
+        ],
+        "rakkers": [
+            {
+                "name": "Elgar Suy",
+                "email": "elgarsvb@gmail.com",
+                "phone": null
+            },
+            {
+                "name": "Yagon Hannot",
+                "email": "yagonhannotgus@gmail.com",
+                "phone": null
+            },
+            {
+                "name": "Carsten Hoogenberg",
+                "email": "carstenhoogenberg@gmail.com",
+                "phone": null
+            },
+            {
+                "name": "Jutta Casaer",
+                "email": "jutta.casaer@gmail.com",
+                "phone": null
+            }
+        ],
+        "tippers": [
+            {
+                "name": "Loïs Huybens",
+                "email": "lois.huybens@outlook.com ",
+                "phone": null
+            },
+            {
+                "name": "Pixie Neyens",
+                "email": "pixie.neyens@hotmail.com",
+                "phone": null
+            },
+            {
+                "name": "Josefien Wellens",
+                "email": "josefien.wellens@gmail.com",
+                "phone": null
+            },
+            {
+                "name": "Lis Hannot",
+                "email": "lishannot@hotmail.com",
+                "phone": null
+            }
+        ],
+        "toppers": [
+            {
+                "name": "Douwe Somers",
+                "email": "douwesomers@live.be",
+                "phone": null
+            },
+            {
+                "name": "Esmée Devlieger",
+                "email": "esmeedevlieger@gmail.com",
+                "phone": null
+            },
+            {
+                "name": "Broos Cornelis",
+                "email": "broosc2004@gmail.com",
+                "phone": null
+            }
+        ],
+        "tiptiens": [
+            {
+                "name": "Hasse Casaer",
+                "email": "hasse.casaer@gmail.com",
+                "phone": null
+            },
             {
                 "name": "Elle Wouters",
                 "email": "ellewouters@gmail.com",
@@ -34,32 +186,13 @@
                 "name": "Mette Couvreur",
                 "email": "mette.couvreur@hotmail.com",
                 "phone": null
-            },
-            {
-                "name": "Xander De Kay",
-                "email": "Xander.dekay@gmail.com",
-                "phone": null
-            },
-            {
-                "name": "Gijs Puttemans",
-                "email": "gijs.puttemans20@gmail.com",
-                "phone": null
-            },
-            {
-                "name": "Lara Stulens",
-                "email": "lara.stulens@gmail.com ",
-                "phone": null
             }
+            
         ],
-        "speelclub": [
+        "kerels": [
             {
-                "name": "Janne Boogaerts",
-                "email": "janneboogaerts@gmail.com",
-                "phone": null
-            },
-            {
-                "name": "Broos Cornelis",
-                "email": "broosc2004@gmail.com",
+                "name": "Wannes Dirix",
+                "email": "wannes.dirix@gmail.com",
                 "phone": null
             },
             {
@@ -68,54 +201,15 @@
                 "phone": null
             },
             {
-                "name": "Jorre Wyffels",
-                "email": "jorrewyffels@gmail.com ",
-                "phone": null
-            },
-            {
-                "name": "Hannah Stoefs",
-                "email": "",
-                "phone": null
-            }
-        ],
-        "kwikken": [
-            {
-                "name": "Loïs Huybens",
-                "email": "lois.huybens@outlook.com ",
-                "phone": null
-            },
-            {
-                "name": "Douwe Somers",
-                "email": "douwesomers@live.be",
-                "phone": null
-            },
-            {
                 "name": "Anke Goyens",
                 "email": "goyensanke@yahoo.com ",
                 "phone": null
             }
         ],
-        "rakkers": [
+        "aspimeisjes": [
             {
-                "name": "Jur Melio",
-                "email": "jur.melio@hotmail.com",
-                "phone": null
-            },
-            {
-                "name": "Phil Huybens",
-                "email": "phil.huybens@outlook.com",
-                "phone": null
-            },
-            {
-                "name": "Dries Pollers",
-                "email": "dpollers@gmail.com",
-                "phone": null
-            }
-        ],
-        "tippers": [
-            {
-                "name": "Hasse Casaer",
-                "email": "hasse.casaer@gmail.com",
+                "name": "Janne Boogaerts",
+                "email": "janneboogaerts@gmail.com",
                 "phone": null
             },
             {
@@ -124,88 +218,30 @@
                 "phone": null
             },
             {
-                "name": "Bente Joris",
-                "email": "bentejoris@gmail.com",
+                "name": "Xander De Kay",
+                "email": "Xander.dekay@gmail.com",
                 "phone": null
             }
         ],
-        "toppers": [
+        "aspijongens": [
             {
-                "name": "Elgar Suy",
-                "email": "elgarsvb@gmail.com",
+                "name": "Gijs Puttemans",
+                "email": "gijs.puttemans20@gmail.com",
                 "phone": null
             },
             {
-                "name": "Niels Malliet",
-                "email": "niels.malliet@gmail.com",
-                "phone": null
-            },
-            {
-                "name": "Rens Deschryver",
-                "email": "rens.deschryver@gmail.com",
-                "phone": null
-            }
-        ],
-        "tiptiens": [
-            {
-                "name": "Alizée Jacobs",
-                "email": "alizee.jacobs@hotmail.be",
-                "phone": null
-            },
-            {
-                "name": "Wouter Capoen",
-                "email": "capoenwouter@gmail.com",
-                "phone": null
-            },
-            {
-                "name": "Sara Jacobs",
-                "email": "jacobssara01@gmail.com",
-                "phone": null
-            }
-        ],
-        "kerels": [
-            {
-                "name": "Luca Jacobs",
-                "email": "lucajacobs73@gmail.com",
+                "name": "Phil Huybens",
+                "email": "phil.huybens@outlook.com",
                 "phone": null
             },
             {
                 "name": "Lukas Verboven",
                 "email": "lukas.verboven@gmail.com",
                 "phone": null
-            }
-        ],
-        "aspimeisjes": [
-            {
-                "name": "Pauline Poplemont",
-                "email": "paulinepoplemont@live.be",
-                "phone": null
             },
             {
-                "name": "Pixie Neyens",
-                "email": "pixie.neyens@hotmail.com",
-                "phone": null
-            },
-            {
-                "name": "Yagon Hannot",
-                "email": "yagonhannotgus@gmail.com",
-                "phone": null
-            }
-        ],
-        "aspijongens": [
-            {
-                "name": "Wannes Dirix",
-                "email": "wannes.dirix@gmail.com",
-                "phone": null
-            },
-            {
-                "name": "Esmée Devlieger",
-                "email": "esmeedevlieger@gmail.com",
-                "phone": null
-            },
-            {
-                "name": "Senne Beunen",
-                "email": "senne.beunen@gmail.com",
+                "name": "Rens Deschryver",
+                "email": "rens.deschryver@gmail.com",
                 "phone": null
             }
         ]
