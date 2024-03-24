@@ -1,0 +1,608 @@
+/* Index of the css:
+css header
+css footer
+css body general
+css body index
+css body leiding
+css body lid worden
+css body verhuur
+css kampklok
+responsive css
+
+*/
+
+
+
+:root {
+  --primary: #e51836;
+  --secondary: #202d3d;
+
+  --chirood: #e51836;
+  --chiblauw: #002c62;
+  --chibeige: #e7d2ac;
+
+  --verantwoordelijkenkleur: #7b0d1d;
+  --kiekeboekleur: #53169b;
+  --speelclubkleur: #d7a504;
+  --rakwikleur: #008535;
+  --titokleur: #bc0000;
+  --ketikleur: #035ca3;
+  --aspikleur: #d3690e;
+}
+
+/* link color: #004BA9
+light link color: #ACCEFF*/
+
+
+/*css header*/
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header img.logo {
+  height: 60px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 0 10px 0;
+  float: left;
+  filter: invert(21%) sepia(99%) saturate(5429%) hue-rotate(343deg) brightness(92%) contrast(95%);
+}
+
+header {
+  width: 100%;
+  background: var(--secondary);
+  color: white;
+  min-height: 70px;
+  border-bottom: var(--primary) 3px solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+img.hamburger {
+  image-rendering: pixelated;
+  height: 30px;
+  float: right;
+  padding-top: 20px;
+  padding-bottom: auto;
+  display: none;
+}
+
+nav {
+  float: right;
+  display: block;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 0 0 60px;
+  padding: 32px 0 0 0;
+  position: relative;
+  top: 0%;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: var(--primary);
+  position: absolute;
+  top: 0;
+  width: 0;
+  transition: ease-in-out 150ms;
+  transition-property: width, color;
+  max-width: 150px;
+}
+
+nav a:hover::before,
+nav a:focus::before {
+  width: 100%;
+}
+
+header .huidig {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+
+
+
+/*css footer*/
+footer {
+  position: relative;
+  width: 100%;
+  background-color: var(--secondary);
+  color: white;
+  text-align: center;
+  border-top: var(--primary) 3px solid;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer p {
+  color: white;
+  margin: 16px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus-visible {
+  color: #ACCEFF;
+  text-decoration: underline;
+}
+
+footer img {
+  Width: 120px;
+}
+
+
+
+/*css body general*/
+body {
+  margin: 0px auto;
+  background: white;
+  font-family: 'Work Sans', sans-serif;
+  /*Myriad Pro, Arial (Narrow), */
+  font-weight: 600;
+}
+
+main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: block;
+  overflow: hidden;
+}
+
+main img {
+  height: auto;
+  display: block;
+  width: 100%;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+
+a {
+  color: #004BA9;
+}
+
+a:focus {
+  color: var(--primary);
+}
+
+
+
+
+
+
+/*css body index*/
+p, li {
+  font-size: 1rem;
+  color: black;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+}
+
+h3 {
+  margin-top: 2.4rem;
+  margin-bottom: 1.4rem;
+  font-size: 1.4rem;
+  color: black;
+  font-weight: bold;
+}
+
+button {
+  background-color: #F0F0F0;
+  border: 1px solid #AAAAAA;
+  border-radius: 4px;
+  color: var(--secondary);
+  cursor: pointer;
+  height: auto;
+  line-height: 27px;
+  min-width: 54px;
+  padding: 0 12px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+}
+
+#faq div {
+  padding: 5px;
+}
+
+button:hover,
+button:focus-visible {
+  border-color: var(--primary);
+  box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+  color: #202124;
+}
+
+.indexmain {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  grid-column-gap: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+.indexmain img {
+  max-width: min(100%, 400px);
+}
+
+.maintitel {
+  font-size: 25px;
+  text-align: center;
+}
+
+.left {
+  margin-right: 5px;
+  text-align: left;
+}
+
+.left #takken {
+  height: 167px;
+  width: 470px;
+}
+
+.right {
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+iframe {
+  margin-bottom: 1px;
+}
+
+.showcase {
+  background: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  border-bottom: var(--primary) 3px solid;
+  margin-bottom: 30px;
+}
+
+.showcasetext {
+  color: white;
+  text-shadow: 1px 1px #060102;
+  font-weight: bold;
+}
+
+h1.showcasetext {
+  padding-top: 25px;
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 5px;
+}
+
+p.showcasetext {
+  margin-top: 5px;
+  font-size: 20px;
+  padding-bottom: 25px;
+}
+
+:focus {
+  outline: none;
+}
+
+
+/*tabel met groepen*/
+
+.takken-table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+  max-width: 100%;
+}
+
+.takken-table td {
+  border-style: solid;
+  border-color: #c0c0c0;
+  border-width: 3px;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 6px 30px;
+  word-break: normal;
+  background-color: #49649d;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle
+}
+
+
+
+
+/*css body leiding*/
+.leiding {
+  padding-left: 10px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.4rem;
+  font-size: 15px;
+  column-count: 3;
+  column-width: 270px;
+  -webkit-column-count: 3;
+  -webkit-column-width: 270px;
+}
+
+.leiding div {
+  display: block;
+  break-inside: avoid;
+}
+
+.leiding h3 {
+  color: white;
+  background-color: var(--chiblauw);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 0.2rem 0 0.2rem 0.5rem;
+  max-width: 10.1rem;
+}
+
+.leiding dl {
+  margin-bottom: 2.4rem;
+}
+
+.verantwoordelijken:hover h3 {
+  background-color: var(--verantwoordelijkenkleur);
+}
+
+.verantwoordelijken:hover a {
+  color: var(--verantwoordelijkenkleur);
+}
+
+.kiekeboes:hover h3 {
+  background-color: var(--kiekeboekleur);
+}
+
+.kiekeboes:hover a {
+  color: var(--kiekeboekleur);
+}
+
+.speelclub:hover h3 {
+  background-color: var(--speelclubkleur);
+}
+
+.speelclub:hover a {
+  color: var(--speelclubkleur);
+}
+
+.rakwis:hover h3 {
+  background-color: var(--rakwikleur);
+}
+
+.rakwis:hover a {
+  color: var(--rakwikleur);
+}
+
+.titos:hover h3 {
+  background-color: var(--titokleur);
+}
+
+.titos:hover a {
+  color: var(--titokleur);
+}
+
+.ketis:hover h3 {
+  background-color: var(--ketikleur);
+}
+
+.ketis:hover a {
+  color: var(--ketikleur);
+}
+
+.aspis:hover h3 {
+  background-color: var(--aspikleur);
+}
+
+.aspis:hover a {
+  color: var(--aspikleur);
+}
+
+
+
+
+/*css body lid worden*/
+
+.lidworden {
+  text-align: left;
+  display: block;
+}
+
+.lidworden a {
+  text-decoration: none;
+}
+
+
+
+
+/*css body verhuur*/
+#infra {
+  padding-top: 10px;
+}
+
+#hal {
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+/*kampklok*/
+.centered {
+  text-align: center;
+}
+
+.kampklok {
+  color: white;
+  text-shadow: 0.7px 0.7px black;
+}
+
+h2.kampklok {
+  font-size: 1.9rem;
+}
+
+p.kampklok {
+  font-size: 1.3rem;
+}
+
+
+
+
+/*responsive css*/
+@media only screen and (max-width: 900px) {
+  
+  nav {
+    display: none;
+  }
+
+  .container nav img {
+    display: none;
+  }
+
+  .container header image {
+    display: none;
+  }
+
+  .container nav a {
+    justify-content: start;
+    padding-right: 1px;
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+
+  .verhuur iframe {
+    display: none;
+  }
+
+  .container nav ul li {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .container nav img {
+    padding-right: 25px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+
+  .verhuur iframe {
+    display: none;
+  }
+
+  .leiding {
+    display: block;
+  }
+
+  .container nav ul li {
+    float: left;
+    display: inline;
+    width: 100%;
+  }
+
+  .container nav img {
+    padding-right: 30px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+
+  .indexmain {
+    display: block;
+    grid-template-columns: 6fr 4fr;
+    grid-column-gap: 2em;
+  }
+
+  nav a {
+    padding-right: 45px;
+    font-size: 15px;
+    padding-left: 0;
+  }
+
+  nav img {
+    padding-right: 100px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+
+  .showcase {
+    min-height: 200px;
+  }
+
+  h1.showcasetext {
+    margin-top: 50px;
+  }
+
+  img.hamburger {
+    display: block;
+  }
+
+  .takken-table td {
+    padding: 6px 15px;
+  }
+
+  div.fairtradegemeente {
+    margin: 0 auto 0 auto;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px 0 20px 0;
+  }
+
+  footer div img {
+    align-self: flex-end;
+  }
+}
