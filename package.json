@@ -1,0 +1,25 @@
+{
+  "name": "chiroherent.github.io",
+  "version": "1.0.0",
+  "description": "Website Chiro Herent",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "build-ghpages": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve",
+    "debug": "DEBUG=* npx @11ty/eleventy"
+  },
+  "repository": {
+		"type": "git",
+		"url": "git://github.com/chiroherent/chiroherent.github.io.git" 
+	},
+  "author": "Chiro Herent",
+  "license": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "bugs": {
+		"url": "https://github.com/chiroherent/chiroherent.github.io/issues"
+	},
+  "homepage": "https://chiroherent.be"
+}
