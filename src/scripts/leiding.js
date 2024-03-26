@@ -1,7 +1,7 @@
 /* Van dit deel moet je afblijven tenzij je weet wat je aan het doen bent */
 
 /* load JSON file*/
-fetch('./script/leiding.json')
+fetch('/scripts/leiding.json')
   .then((response) => response.json())
   .then((leidingJSON) => setpagecontent(leidingJSON));
 console.log("loaded leiding.js")
