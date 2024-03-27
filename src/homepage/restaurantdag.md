@@ -2,7 +2,7 @@
 title: 'Restaurantdag: 4 februari 2024'
 date: 2024-02-04
 tags:
-  - HomepageLinks
+  - HomepageLeft
 eleventyExcludeFromCollections: true
 permalink: false
 ---

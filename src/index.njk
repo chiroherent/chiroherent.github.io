@@ -1,6 +1,8 @@
 ---
-title: Chiro Herent
+title: Home
 layout: 'layouts/base.njk'
+tags:
+  - navbar
 showcase: 
   image: 'media/homepagina.jpg'
   title: Chiro Herent
@@ -11,7 +13,7 @@ showcase:
   <div class="indexmain">
     <div class="left">
       <!-- Home page nieuwtjes beginnen hier -->
-      {%- for post in collections.HomepageLinks | reverse -%}
+      {%- for post in collections.HomepageLeft | reverse -%}
       <h3>{{ post.data.title }}</h3>
       <p>{{ post.content | safe }}</p>
       {% endfor %}
@@ -19,7 +21,7 @@ showcase:
 
 
     <div class="right">
-      {%- for post in collections.HomepageRechts | reverse -%}
+      {%- for post in collections.HomepageRight | reverse -%}
       <h3>{{ post.data.title }}</h3>
       <p>{{ post.content | safe }}</p>
       {% endfor %}
