@@ -1,15 +1,14 @@
 ---
 title: Chiro Herent
 layout: 'layouts/base.njk'
+showcase: 
+  image: 'media/homepagina.jpg'
+  title: Chiro Herent
+  placement: '80% 20%'
 ---
 
 
-<section class="showcase" style="background-image: url('media/homepagina.jpg'); background-position: 80% 20%;">
-  <h1 class="showcasetext">Chiro Herent</h1>
-</section>
-<main>
   <div class="indexmain">
-    
     <div class="left">
       <!-- Home page nieuwtjes beginnen hier -->
       {%- for post in collections.HomepageLinks | reverse -%}
@@ -40,4 +39,3 @@ layout: 'layouts/base.njk'
         style="overflow: hidden;"></iframe>
     </div>
   </div>
-</main>
