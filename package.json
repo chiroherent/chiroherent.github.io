@@ -10,16 +10,19 @@
     "debug": "DEBUG=* npx @11ty/eleventy"
   },
   "repository": {
-		"type": "git",
-		"url": "git://github.com/chiroherent/chiroherent.github.io.git" 
-	},
+    "type": "git",
+    "url": "git://github.com/chiroherent/chiroherent.github.io.git"
+  },
   "author": "Chiro Herent",
   "license": "",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
   },
   "bugs": {
-		"url": "https://github.com/chiroherent/chiroherent.github.io/issues"
-	},
-  "homepage": "https://chiroherent.be"
+    "url": "https://github.com/chiroherent/chiroherent.github.io/issues"
+  },
+  "homepage": "https://chiroherent.be",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
 }
