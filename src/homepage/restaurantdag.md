@@ -4,7 +4,6 @@ date: 2024-02-04
 tags:
   - HomepageLeft
 eleventyExcludeFromCollections: true
-permalink: false
 ---
 
 Gezellig en lekker tafelen in kleine of grote groep, oude of jonge bekenden terugzien en je gewoon eens rustig laten bedienen op een luie winterse zondag… dat blijft waar we voor staan en voor gaan!
