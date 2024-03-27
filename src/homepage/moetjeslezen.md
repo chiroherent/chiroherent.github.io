@@ -4,7 +4,6 @@ date: 2015-01-01
 tags:
   - HomepageRight
 eleventyExcludeFromCollections: false
-permalink: false
 ---
 
 De Moetjeslezen is het boekje voor alle groepen, je kan het online of op papier krijgen.

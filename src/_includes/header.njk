@@ -3,14 +3,15 @@
         <a href="/"><img class="logo" src="/media/chiroherent.svg" alt="Chiro Herent" /></a>
         <img class="hamburger" src="/media/hamburger.png" onclick="hamburgerMenu()" />
         <nav id="navbar">
-            <!-- De navbar wordt bepaald door script/navbar.js en kan dus niet hier aangepast worden -->
+            <!-- De navbar wordt gemaakt door eleventy, het bevat alle pagina's met de tag 'navbar' -->
             <ul>
                 {%- for post in collections.navbar -%}
-                {% if page.url==post.url %} <li class="huidig" aria-current="page">{{post.data.title }}</li> {% else %} <li><a href={{post.url}}>{{post.data.title }}</a></li> {% endif %}
+                {% if page.url==post.url %} <li class="huidig" aria-current="page">{{post.data.title }}</li> {% else %}
+                <li><a href={{post.url}}>{{post.data.title }}</a></li> {% endif %}
                 {%- endfor -%}
             </ul>
         </nav>
     </div>
 </header>
+<!-- navbar.js zorgt voor het hamburger menu op smalle schermen -->
 <script src="/scripts/navbar.js"></script>
-<!-- navbar.js zorgt voor het hamburger menu op smalle schermen en bepaalt de lijst met pagina's in de navbar -->

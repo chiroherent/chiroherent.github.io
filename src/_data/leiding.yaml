@@ -2,15 +2,15 @@
 hoofdleiding:
 - name: Lukas Verboven
   email: lukas.verboven@gmail.com
-  phonehidden: 
+  phone: 
   
 - name: Mette Couvreur
   email: mette.couvreur@hotmail.com
-  phonehidden: 
+  phone: 
   
 - name: Lara Stulens
-  email: 'lara.stulens@gmail.com '
-  phonehidden: 
+  email: lara.stulens@gmail.com
+  phone: 
   
 vb:
 - name: Lore Houben
@@ -23,7 +23,7 @@ vb:
   
 kiekeboes:
 - name: Lara Stulens
-  email: 'lara.stulens@gmail.com '
+  email: lara.stulens@gmail.com
   phone: 
   
 - name: Bente Joris
@@ -154,7 +154,7 @@ kerels:
   phone: 
   
 - name: Anke Goyens
-  email: 'goyensanke@yahoo.com '
+  email: goyensanke@yahoo.com
   phone: 
   
 aspimeisjes:
