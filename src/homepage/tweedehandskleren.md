@@ -2,7 +2,7 @@
 title: Tweedehands Chiro-kleren
 date: 2018-01-01
 tags:
-  - HomepageLinks
+  - HomepageLeft
 eleventyExcludeFromCollections: true
 permalink: false
 ---

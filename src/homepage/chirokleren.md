@@ -2,7 +2,7 @@
 title: Chiro-kleren
 date: 2015-01-01
 tags:
-  - HomepageLinks
+  - HomepageLeft
 eleventyExcludeFromCollections: false
 permalink: false
 ---
