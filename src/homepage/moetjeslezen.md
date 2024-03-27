@@ -2,7 +2,7 @@
 title: Moetjeslezen
 date: 2015-01-01
 tags:
-  - HomepageRechts
+  - HomepageRight
 eleventyExcludeFromCollections: false
 permalink: false
 ---
