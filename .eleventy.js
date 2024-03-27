@@ -1,5 +1,10 @@
+const yaml = require("js-yaml");
+
 module.exports = function (eleventyConfig) {
   // call functions on eleventyConfig here
+
+  // support for yaml data files
+  eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
 
   // these files and folders will not be processed by 11ty
   // more info: https://www.11ty.dev/docs/copy/
