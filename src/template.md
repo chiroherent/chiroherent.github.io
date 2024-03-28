@@ -1,8 +1,13 @@
 ---
-order: 10
+title: Template
+layout: 'layouts/base.njk'
 tags:
-    - HomepageLeft
-eleventyExcludeFromCollections: false
+  - navbar
+order: 80
+showcase: 
+  image: '/media/kampklokachtergrond.jpg'
+  title: Template
+  placement: '50% 67%'
 ---
 
 ### Titel

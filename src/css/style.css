@@ -4,8 +4,6 @@ css footer
 css body general
 css body index
 css body leiding
-css body lid worden
-css body verhuur
 css kampklok
 responsive css
 
@@ -451,32 +449,6 @@ p.showcasetext {
   color: var(--aspikleur);
 }
 
-
-
-
-/*css body lid worden*/
-
-.lidworden {
-  text-align: left;
-  display: block;
-}
-
-.lidworden a {
-  text-decoration: none;
-}
-
-
-
-
-/*css body verhuur*/
-#infra {
-  padding-top: 10px;
-}
-
-#hal {
-  padding-bottom: 20px;
-  padding-top: 10px;
-}
 
 /*kampklok*/
 .centered {
