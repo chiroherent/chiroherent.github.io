@@ -15,7 +15,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/scripts");
   eleventyConfig.addPassthroughCopy("src/kwikken");
 
-  // filter the left homepage items
+  // order the left homepage items
   eleventyConfig.addCollection("HomepageLeftSorted", collection => {
     const HomepageLeftSorted = collection.getFilteredByTag("HomepageLeft")
       .sort((a, b) => {
@@ -24,13 +24,22 @@ module.exports = function (eleventyConfig) {
     return HomepageLeftSorted;
   });
 
-  // filter the right homepage items
+  // order the right homepage items
   eleventyConfig.addCollection("HomepageRightSorted", collection => {
     const HomepageRightSorted = collection.getFilteredByTag("HomepageRight")
       .sort((a, b) => {
         return Number(a.data.order) - Number(b.data.order);
       });
     return HomepageRightSorted;
+  });
+
+  // order the navbar 
+  eleventyConfig.addCollection("NavbarSorted", collection => {
+    const NavbarSorted = collection.getFilteredByTag("navbar")
+      .sort((a, b) => {
+        return Number(a.data.order) - Number(b.data.order);
+      });
+    return NavbarSorted;
   });
 
   // return object options in the object starting on the line below
