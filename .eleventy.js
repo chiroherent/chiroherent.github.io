@@ -3,7 +3,7 @@ const yaml = require("js-yaml");
 module.exports = function (eleventyConfig) {
   // call functions on eleventyConfig here
 
-  // support for yaml data files
+  // add support for yaml data files
   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
 
   // these files and folders will not be processed by 11ty
@@ -14,6 +14,24 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/media");
   eleventyConfig.addPassthroughCopy("src/scripts");
   eleventyConfig.addPassthroughCopy("src/kwikken");
+
+  // filter the left homepage items
+  eleventyConfig.addCollection("HomepageLeftSorted", collection => {
+    const HomepageLeftSorted = collection.getFilteredByTag("HomepageLeft")
+      .sort((a, b) => {
+        return Number(a.data.order) - Number(b.data.order);
+      });
+    return HomepageLeftSorted;
+  });
+
+  // filter the right homepage items
+  eleventyConfig.addCollection("HomepageRightSorted", collection => {
+    const HomepageRightSorted = collection.getFilteredByTag("HomepageRight")
+      .sort((a, b) => {
+        return Number(a.data.order) - Number(b.data.order);
+      });
+    return HomepageRightSorted;
+  });
 
   // return object options in the object starting on the line below
   return {
