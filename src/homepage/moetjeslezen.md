@@ -1,10 +1,11 @@
 ---
-title: Moetjeslezen
-date: 2015-01-01
+order: 30
 tags:
   - HomepageRight
 eleventyExcludeFromCollections: false
 ---
+
+### Moetjeslezen
 
 De Moetjeslezen is het boekje voor alle groepen, je kan het online of op papier krijgen.
 
