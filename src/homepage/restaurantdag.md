@@ -1,10 +1,11 @@
 ---
-title: 'Restaurantdag: 4 februari 2024'
-date: 2024-02-04
+order: 10
 tags:
   - HomepageLeft
 eleventyExcludeFromCollections: true
 ---
+
+### Restaurantdag: 4 februari 2024
 
 Gezellig en lekker tafelen in kleine of grote groep, oude of jonge bekenden terugzien en je gewoon eens rustig laten bedienen op een luie winterse zondag… dat blijft waar we voor staan en voor gaan!
 
