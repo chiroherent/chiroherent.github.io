@@ -1,5 +1,5 @@
 ---
-order: 80
+order: 70
 tags:
   - HomepageLeft
 eleventyExcludeFromCollections: false
