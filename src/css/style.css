@@ -168,6 +168,10 @@ footer img {
 
 
 /*css body general*/
+.backgroundsecondary {
+  background-color: var(--secondary);
+}
+
 body {
   margin: 0px auto;
   background: white;
@@ -462,12 +466,24 @@ p.showcasetext {
 
 h2.kampklok {
   font-size: 1.9rem;
+  margin-top: 1.4rem
 }
 
 p.kampklok {
   font-size: 1.3rem;
 }
 
+#kampklokuitleg {
+  margin-bottom: 0rem;
+}
+
+#kampkloktijd {
+  margin: 0.2rem
+}
+
+#kampklokinfo {
+  font-weight: 700;
+}
 
 
 
