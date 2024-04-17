@@ -26,13 +26,15 @@ aspis: {aspimeisjes: "Aspi-meisjes", aspijongens: "Aspi-jongens"}
 <div class="{{ class }}">
   {% for group, groupName in groupObj %}
   <h3>{{ groupName}}</h3>
-  <dl id="{{ group }}">
+  <ul id="{{ group }}">
     {% for leiding in leiding[group] %}
-    <dt><strong>{{ leiding.name }}</strong></dt>
-    {% if leiding.email != null %}<dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>{% endif %}
-    {% if leiding.phone != null %}<dd>{{ leiding.phone }}</dd>{% endif %}
+    <li><strong>{{ leiding.name }}</strong>
+    <ul>
+    {% if leiding.email != null %}<li><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></li>{% endif %}
+    {% if leiding.phone != null %}<li>{{ leiding.phone }}</li>{% endif %}
+    </ul></li>
     {% endfor %}
-  </dl>
+  </ul>
   {% endfor %}
 </div>
 {% endfor %}

@@ -393,8 +393,19 @@ p.showcasetext {
   max-width: 10.1rem;
 }
 
-.leiding dl {
+.leiding ul {
   margin-bottom: 2.4rem;
+  padding-left: 0;
+}
+
+.leiding ul li {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.leiding ul li ul {
+  margin-left: 30px;
+  margin-bottom: 0.5rem;
 }
 
 .verantwoordelijken:hover h3 {
