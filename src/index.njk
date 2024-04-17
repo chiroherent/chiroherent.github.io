@@ -10,22 +10,26 @@ showcase:
   placement: '80% 20%'
 ---
 
-
 <div class="indexmain">
 
   <!-- Home page nieuwtjes beginnen hier 
 
-  maak een bestand met tag 'HomepageLeft' in de map homepage om hieraan toe te voegen-->
+  Linker kolom: Maak een bestand met tag 'HomepageLeft' in de map homepage om hieraan toe te voegen-->
   <div class="left">
+
     {%- for post in collections.HomepageLeftSorted -%}
-    {{ post.content | safe }}
+    <article>
+      {{ post.content | safe }}
+    </article>
     {% endfor %}
   </div>
 
-  <!-- Hetzelfde, maar hier met homepageRight -->
+  <!-- Rechter kolom: Maak een bestand met tag 'HomepageRight' in de map homepage om hieraan toe te voegen-->
   <div class="right">
     {%- for post in collections.HomepageRightSorted -%}
-    {{ post.content | safe }}
+    <article>
+      {{ post.content | safe }}
+    </article>
     {% endfor %}
   </div>
   <!-- Home page nieuwtjes eindigen hier -->
