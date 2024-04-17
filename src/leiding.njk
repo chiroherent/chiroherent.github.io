@@ -1,125 +1,124 @@
 ---
 title: Leiding
-layout: 'layouts/base.njk'
+layout: 'layouts/article.njk'
 tags:
   - navbar
 order: 20
+divclass: leiding
 showcase: 
   image: '/media/leidingspagina.jpg'
   title: Leiding
   placement: '50% 50%'
 ---
 
-<div class="leiding">
-  <!-- De info hier wordt bepaald door _data/leiding.yaml -->
-  <div class="verantwoordelijken">
-    <h3>Hoofdleiding</h3>
-    <dl id="hoofdleiding">
-      {% for leiding in leiding.hoofdleiding %}
-      <dt><strong>{{ leiding.name }}</strong></dt>
-      <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-      <dd>{{ leiding.phone }}</dd>
-      {% endfor %}
-    </dl>
-    <h3>Volwassen begeleiders</h3>
-    <dl id="vb">
-      {% for leiding in leiding.vb %}
-      <dt><strong>{{ leiding.name }}</strong></dt>
-      <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-      <dd>{{ leiding.phone }}</dd>
-      {% endfor %}
-    </dl>
-  </div>
-  <div class="kiekeboes">
-    <h3>Kiekeboes</h3>
-    <dl id="kiekeboes">
-      {% for leiding in leiding.kiekeboes %}
-      <dt><strong>{{ leiding.name }}</strong></dt>
-      <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-      <dd>{{ leiding.phone }}</dd>
-      {% endfor %}
-    </dl>
-  </div>
-  <div class="speelclub">
-    <h3>Speelclub</h3>
-    <dl id="speelclub">
-      {% for leiding in leiding.speelclub %}
-      <dt><strong>{{ leiding.name }}</strong></dt>
-      <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-      <dd>{{ leiding.phone }}</dd>
-      {% endfor %}
-    </dl>
-  </div>
-  <div class="rakwis">
-    <h3>Kwikken</h3>
-    <dl id="kwikken">
-      {% for leiding in leiding.kwikken %}
-      <dt><strong>{{ leiding.name }}</strong></dt>
-      <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-      <dd>{{ leiding.phone }}</dd>
-      {% endfor %}
-    </dl>
-    <h3>Rakkers</h3>
-    <dl id="rakkers">
-      {% for leiding in leiding.rakkers %}
-      <dt><strong>{{ leiding.name }}</strong></dt>
-      <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-      <dd>{{ leiding.phone }}</dd>
-      {% endfor %}
-    </dl>
-  </div>
-  <div class="titos">
-    <h3>Tippers</h3>
-    <dl id="tippers">
-      {% for leiding in leiding.tippers %}
-      <dt><strong>{{ leiding.name }}</strong></dt>
-      <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-      <dd>{{ leiding.phone }}</dd>
-      {% endfor %}
-    </dl>
-    <h3>Toppers</h3>
-    <dl id="toppers">
-      {% for leiding in leiding.toppers %}
-      <dt><strong>{{ leiding.name }}</strong></dt>
-      <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-      <dd>{{ leiding.phone }}</dd>
-      {% endfor %}
-    </dl>
-  </div>
-  <div class="ketis">
-    <h3>Tiptiens</h3>
-    <dl id="tiptiens">
-      {% for leiding in leiding.tiptiens %}
-      <dt><strong>{{ leiding.name }}</strong></dt>
-      <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-      <dd>{{ leiding.phone }}</dd>
-      {% endfor %}
-    </dl>
-    <h3>Kerels</h3>
-    <dl id="kerels">
-      {% for leiding in leiding.kerels %}
-      <dt><strong>{{ leiding.name }}</strong></dt>
-      <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-      <dd>{{ leiding.phone }}</dd>
-      {% endfor %}
-    </dl>
-  </div>
-  <div class="aspis">
-    <h3>Aspi-meisjes</h3>
-    <dl id="aspimeisjes">
-      {% for leiding in leiding.aspimeisjes %}
-      <dt><strong>{{ leiding.name }}</strong></dt>
-      <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-      <dd>{{ leiding.phone }}</dd>
-      {% endfor %}
-    </dl>
-    <h3>Aspi-jongens</h3>
-    <dl id="aspijongens">
-      {% for leiding in leiding.aspijongens %}
-      <dt><strong>{{ leiding.name }}</strong></dt>
-      <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-      <dd>{{ leiding.phone }}</dd>
-      {% endfor %}
-    </dl>
-  </div>
+<!-- De info hier wordt bepaald door _data/leiding.yaml -->
+<div class="verantwoordelijken">
+  <h3>Hoofdleiding</h3>
+  <dl id="hoofdleiding">
+    {% for leiding in leiding.hoofdleiding %}
+    <dt><strong>{{ leiding.name }}</strong></dt>
+    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
+    <dd>{{ leiding.phone }}</dd>
+    {% endfor %}
+  </dl>
+  <h3>Volwassen begeleiders</h3>
+  <dl id="vb">
+    {% for leiding in leiding.vb %}
+    <dt><strong>{{ leiding.name }}</strong></dt>
+    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
+    <dd>{{ leiding.phone }}</dd>
+    {% endfor %}
+  </dl>
+</div>
+<div class="kiekeboes">
+  <h3>Kiekeboes</h3>
+  <dl id="kiekeboes">
+    {% for leiding in leiding.kiekeboes %}
+    <dt><strong>{{ leiding.name }}</strong></dt>
+    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
+    <dd>{{ leiding.phone }}</dd>
+    {% endfor %}
+  </dl>
+</div>
+<div class="speelclub">
+  <h3>Speelclub</h3>
+  <dl id="speelclub">
+    {% for leiding in leiding.speelclub %}
+    <dt><strong>{{ leiding.name }}</strong></dt>
+    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
+    <dd>{{ leiding.phone }}</dd>
+    {% endfor %}
+  </dl>
+</div>
+<div class="rakwis">
+  <h3>Kwikken</h3>
+  <dl id="kwikken">
+    {% for leiding in leiding.kwikken %}
+    <dt><strong>{{ leiding.name }}</strong></dt>
+    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
+    <dd>{{ leiding.phone }}</dd>
+    {% endfor %}
+  </dl>
+  <h3>Rakkers</h3>
+  <dl id="rakkers">
+    {% for leiding in leiding.rakkers %}
+    <dt><strong>{{ leiding.name }}</strong></dt>
+    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
+    <dd>{{ leiding.phone }}</dd>
+    {% endfor %}
+  </dl>
+</div>
+<div class="titos">
+  <h3>Tippers</h3>
+  <dl id="tippers">
+    {% for leiding in leiding.tippers %}
+    <dt><strong>{{ leiding.name }}</strong></dt>
+    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
+    <dd>{{ leiding.phone }}</dd>
+    {% endfor %}
+  </dl>
+  <h3>Toppers</h3>
+  <dl id="toppers">
+    {% for leiding in leiding.toppers %}
+    <dt><strong>{{ leiding.name }}</strong></dt>
+    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
+    <dd>{{ leiding.phone }}</dd>
+    {% endfor %}
+  </dl>
+</div>
+<div class="ketis">
+  <h3>Tiptiens</h3>
+  <dl id="tiptiens">
+    {% for leiding in leiding.tiptiens %}
+    <dt><strong>{{ leiding.name }}</strong></dt>
+    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
+    <dd>{{ leiding.phone }}</dd>
+    {% endfor %}
+  </dl>
+  <h3>Kerels</h3>
+  <dl id="kerels">
+    {% for leiding in leiding.kerels %}
+    <dt><strong>{{ leiding.name }}</strong></dt>
+    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
+    <dd>{{ leiding.phone }}</dd>
+    {% endfor %}
+  </dl>
+</div>
+<div class="aspis">
+  <h3>Aspi-meisjes</h3>
+  <dl id="aspimeisjes">
+    {% for leiding in leiding.aspimeisjes %}
+    <dt><strong>{{ leiding.name }}</strong></dt>
+    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
+    <dd>{{ leiding.phone }}</dd>
+    {% endfor %}
+  </dl>
+  <h3>Aspi-jongens</h3>
+  <dl id="aspijongens">
+    {% for leiding in leiding.aspijongens %}
+    <dt><strong>{{ leiding.name }}</strong></dt>
+    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
+    <dd>{{ leiding.phone }}</dd>
+    {% endfor %}
+  </dl>
 </div>
