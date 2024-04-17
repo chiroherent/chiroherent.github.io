@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="shortcut icon" href="/media/favicon.ico" type="image/x-icon">
-  <title>{{ title }} - Chiro Herent</title>
+  <title>{% if page.url!='/' %}{{ title }} - {% endif %}Chiro Herent</title>
 </head>
 
 <body>
