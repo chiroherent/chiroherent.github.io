@@ -12,113 +12,27 @@ showcase:
 ---
 
 <!-- De info hier wordt bepaald door _data/leiding.yaml -->
-<div class="verantwoordelijken">
-  <h3>Hoofdleiding</h3>
-  <dl id="hoofdleiding">
-    {% for leiding in leiding.hoofdleiding %}
+{% set map = {
+verantwoordelijken: {hoofdleiding: "Hoofdleiding", vb: "Volwassen begeleiders"},
+kiekeboes: {kiekeboes: "Kiekeboes"},
+speelclub: {speelclub: "Speelclub"},
+rakwis: {kwikken: "Kwikken", rakkers: "Rakkers"},
+titos: {tippers: "Tippers", toppers: "Toppers"},
+ketis: {tiptiens: "Tiptiens", kerels: "Kerels"},
+aspis: {aspimeisjes: "Aspi-meisjes", aspijongens: "Aspi-jongens"}
+} %}
+
+{% for class, groupObj in map %}
+<div class="{{ class }}">
+  {% for group, groupName in groupObj %}
+  <h3>{{ groupName}}</h3>
+  <dl id="{{ group }}">
+    {% for leiding in leiding[group] %}
     <dt><strong>{{ leiding.name }}</strong></dt>
-    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-    <dd>{{ leiding.phone }}</dd>
+    {% if leiding.email != null %}<dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>{% endif %}
+    {% if leiding.phone != null %}<dd>{{ leiding.phone }}</dd>{% endif %}
     {% endfor %}
   </dl>
-  <h3>Volwassen begeleiders</h3>
-  <dl id="vb">
-    {% for leiding in leiding.vb %}
-    <dt><strong>{{ leiding.name }}</strong></dt>
-    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-    <dd>{{ leiding.phone }}</dd>
-    {% endfor %}
-  </dl>
+  {% endfor %}
 </div>
-<div class="kiekeboes">
-  <h3>Kiekeboes</h3>
-  <dl id="kiekeboes">
-    {% for leiding in leiding.kiekeboes %}
-    <dt><strong>{{ leiding.name }}</strong></dt>
-    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-    <dd>{{ leiding.phone }}</dd>
-    {% endfor %}
-  </dl>
-</div>
-<div class="speelclub">
-  <h3>Speelclub</h3>
-  <dl id="speelclub">
-    {% for leiding in leiding.speelclub %}
-    <dt><strong>{{ leiding.name }}</strong></dt>
-    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-    <dd>{{ leiding.phone }}</dd>
-    {% endfor %}
-  </dl>
-</div>
-<div class="rakwis">
-  <h3>Kwikken</h3>
-  <dl id="kwikken">
-    {% for leiding in leiding.kwikken %}
-    <dt><strong>{{ leiding.name }}</strong></dt>
-    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-    <dd>{{ leiding.phone }}</dd>
-    {% endfor %}
-  </dl>
-  <h3>Rakkers</h3>
-  <dl id="rakkers">
-    {% for leiding in leiding.rakkers %}
-    <dt><strong>{{ leiding.name }}</strong></dt>
-    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-    <dd>{{ leiding.phone }}</dd>
-    {% endfor %}
-  </dl>
-</div>
-<div class="titos">
-  <h3>Tippers</h3>
-  <dl id="tippers">
-    {% for leiding in leiding.tippers %}
-    <dt><strong>{{ leiding.name }}</strong></dt>
-    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-    <dd>{{ leiding.phone }}</dd>
-    {% endfor %}
-  </dl>
-  <h3>Toppers</h3>
-  <dl id="toppers">
-    {% for leiding in leiding.toppers %}
-    <dt><strong>{{ leiding.name }}</strong></dt>
-    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-    <dd>{{ leiding.phone }}</dd>
-    {% endfor %}
-  </dl>
-</div>
-<div class="ketis">
-  <h3>Tiptiens</h3>
-  <dl id="tiptiens">
-    {% for leiding in leiding.tiptiens %}
-    <dt><strong>{{ leiding.name }}</strong></dt>
-    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-    <dd>{{ leiding.phone }}</dd>
-    {% endfor %}
-  </dl>
-  <h3>Kerels</h3>
-  <dl id="kerels">
-    {% for leiding in leiding.kerels %}
-    <dt><strong>{{ leiding.name }}</strong></dt>
-    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-    <dd>{{ leiding.phone }}</dd>
-    {% endfor %}
-  </dl>
-</div>
-<div class="aspis">
-  <h3>Aspi-meisjes</h3>
-  <dl id="aspimeisjes">
-    {% for leiding in leiding.aspimeisjes %}
-    <dt><strong>{{ leiding.name }}</strong></dt>
-    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-    <dd>{{ leiding.phone }}</dd>
-    {% endfor %}
-  </dl>
-  <h3>Aspi-jongens</h3>
-  <dl id="aspijongens">
-    {% for leiding in leiding.aspijongens %}
-    <dt><strong>{{ leiding.name }}</strong></dt>
-    <dd><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></dd>
-    <dd>{{ leiding.phone }}</dd>
-    {% endfor %}
-  </dl>
-</div>
+{% endfor %}
