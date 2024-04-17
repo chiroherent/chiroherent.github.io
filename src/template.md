@@ -1,22 +1,23 @@
 ---
 title: Template
-layout: 'layouts/base.njk'
+layout: 'layouts/article.njk'
 tags:
   - navbar
 order: 80
+divclass: pagina
 showcase: 
   image: '/media/kampklokachtergrond.jpg'
   title: Template
   placement: '50% 67%'
 ---
 
-### Titel
+## Titel
 
 paragraaf 1, met **vette tekst**
 
 Paragraaf 2 [Link text](https://iets) verder paragraaf 2
 
-## Grotere titel
+### Kleinere titel
 
 * lijst item
 * lijst item

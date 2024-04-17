@@ -11,8 +11,6 @@ paragraaf 1, met **vette tekst**
 
 Paragraaf 2 [Link text](https://iets) verder paragraaf 2
 
-## Grotere titel
-
 * lijst item
 * lijst item
   * subitem
