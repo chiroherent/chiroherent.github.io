@@ -1,10 +1,10 @@
 ---
 title: Leiding
-layout: 'layouts/article.njk'
+layout: 'layouts/base.njk'
 tags:
   - navbar
 order: 20
-divclass: leiding
+mainclass: leiding
 showcase: 
   image: '/media/leidingspagina.jpg'
   title: Leiding
@@ -12,7 +12,7 @@ showcase:
 ---
 
 <!-- De info hier wordt bepaald door _data/leiding.yaml -->
-{% set map = {
+{% for class, groupObj in {
 verantwoordelijken: {hoofdleiding: "Hoofdleiding", vb: "Volwassen begeleiders"},
 kiekeboes: {kiekeboes: "Kiekeboes"},
 speelclub: {speelclub: "Speelclub"},
@@ -21,18 +21,17 @@ titos: {tippers: "Tippers", toppers: "Toppers"},
 ketis: {tiptiens: "Tiptiens", kerels: "Kerels"},
 aspis: {aspimeisjes: "Aspi-meisjes", aspijongens: "Aspi-jongens"}
 } %}
-
-{% for class, groupObj in map %}
 <div class="{{ class }}">
   {% for group, groupName in groupObj %}
   <h3>{{ groupName}}</h3>
   <ul id="{{ group }}">
     {% for leiding in leiding[group] %}
     <li><strong>{{ leiding.name }}</strong>
-    <ul>
-    {% if leiding.email != null %}<li><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></li>{% endif %}
-    {% if leiding.phone != null %}<li>{{ leiding.phone }}</li>{% endif %}
-    </ul></li>
+      <ul>
+        {% if leiding.email != null %}<li><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></li>{% endif %}
+        {% if leiding.phone != null %}<li>{{ leiding.phone }}</li>{% endif %}
+      </ul>
+    </li>
     {% endfor %}
   </ul>
   {% endfor %}

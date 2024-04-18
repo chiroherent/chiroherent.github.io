@@ -4,34 +4,31 @@ layout: 'layouts/base.njk'
 tags:
   - navbar
 order: 10
+mainclass: indexmain
 showcase: 
   image: 'media/homepagina.jpg'
   title: Chiro Herent
   placement: '80% 20%'
 ---
 
-<div class="indexmain">
-
-  <!-- Home page nieuwtjes beginnen hier 
+<!-- Home page nieuwtjes beginnen hier 
 
   Linker kolom: Maak een bestand met tag 'HomepageLeft' in de map homepage om hieraan toe te voegen-->
-  <div class="left">
+<div class="left">
 
-    {%- for post in collections.HomepageLeftSorted -%}
-    <article>
-      {{ post.content | safe }}
-    </article>
-    {% endfor %}
-  </div>
-
-  <!-- Rechter kolom: Maak een bestand met tag 'HomepageRight' in de map homepage om hieraan toe te voegen-->
-  <div class="right">
-    {%- for post in collections.HomepageRightSorted -%}
-    <article>
-      {{ post.content | safe }}
-    </article>
-    {% endfor %}
-  </div>
-  <!-- Home page nieuwtjes eindigen hier -->
-
+  {%- for post in collections.HomepageLeftSorted -%}
+  <article>
+    {{ post.content | safe }}
+  </article>
+  {% endfor %}
 </div>
+
+<!-- Rechter kolom: Maak een bestand met tag 'HomepageRight' in de map homepage om hieraan toe te voegen-->
+<div class="right">
+  {%- for post in collections.HomepageRightSorted -%}
+  <article>
+    {{ post.content | safe }}
+  </article>
+  {% endfor %}
+</div>
+<!-- Home page nieuwtjes eindigen hier -->

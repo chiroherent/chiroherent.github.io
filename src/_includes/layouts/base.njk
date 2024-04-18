@@ -12,16 +12,15 @@
 </head>
 
 <body>
-
   {% include 'header.njk' %}
-  <section class="showcase" style="background-image: url('{{ showcase.image }}'); background-position: {{ showcase.placement }};">
+  <section class="showcase"
+    style="background-image: url('{{ showcase.image }}'); background-position: {{ showcase.placement }};">
     <h1 class="showcasetext">{{ showcase.title }}</h1>
   </section>
-  <main>
+  <main class="{{ mainclass }}">
     {{ content | safe }}
   </main>
   {% include 'footer.njk' %}
-
 </body>
 
 </html>

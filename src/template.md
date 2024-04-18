@@ -1,10 +1,10 @@
 ---
 title: Template
-layout: 'layouts/article.njk'
+layout: 'layouts/base.njk'
 tags:
   - navbar
 order: 80
-divclass: pagina
+mainclass: pagina
 showcase: 
   image: '/media/kampklokachtergrond.jpg'
   title: Template
