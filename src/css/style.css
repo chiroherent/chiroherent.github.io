@@ -177,7 +177,6 @@ body {
   background: white;
   font-family: 'Work Sans', sans-serif;
   /*Myriad Pro, Arial (Narrow), */
-  font-weight: 600;
 }
 
 main {
@@ -254,10 +253,6 @@ button {
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: pre;
-}
-
-#faq div {
-  padding: 5px;
 }
 
 button:hover,
@@ -503,6 +498,10 @@ p.kampklok {
 
   nav {
     display: none;
+  }
+
+  nav li {
+    padding: 17px 0 15px 0;
   }
 
   .container nav img {
