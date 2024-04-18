@@ -1,10 +1,10 @@
 ---
 title: Lid Worden
-layout: 'layouts/article.njk'
+layout: 'layouts/base.njk'
 tags:
   - navbar
 order: 30
-divclass: lidworden
+mainclass: lidworden
 showcase: 
   image: '/media/leden.jpg'
   title: Lid Worden?
