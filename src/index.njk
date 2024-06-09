@@ -11,9 +11,9 @@ showcase:
   placement: '80% 20%'
 ---
 
-<!-- Home page nieuwtjes beginnen hier 
+{#- Home page nieuwtjes beginnen hier 
 
-  Linker kolom: Maak een bestand met tag 'HomepageLeft' in de map homepage om hieraan toe te voegen-->
+  Linker kolom: Maak een bestand met tag 'HomepageLeft' in de map homepage om hieraan toe te voegen -#}
 <div class="left">
 
   {%- for post in collections.HomepageLeftSorted -%}
@@ -23,7 +23,7 @@ showcase:
   {% endfor %}
 </div>
 
-<!-- Rechter kolom: Maak een bestand met tag 'HomepageRight' in de map homepage om hieraan toe te voegen-->
+{#- Rechter kolom: Maak een bestand met tag 'HomepageRight' in de map homepage om hieraan toe te voegen -#}
 <div class="right">
   {%- for post in collections.HomepageRightSorted -%}
   <article>
@@ -31,4 +31,4 @@ showcase:
   </article>
   {% endfor %}
 </div>
-<!-- Home page nieuwtjes eindigen hier -->
+{#- Home page nieuwtjes eindigen hier -#}
