@@ -1,9 +1,9 @@
 ---
-title: Lid Worden
+title: Lid Worden - Chiro Herent
 layout: 'layouts/base.njk'
-tags:
-  - navbar
-order: 30
+eleventyNavigation:
+  key: Lid Worden
+  order: 30
 mainclass: lidworden
 showcase: 
   image: '/media/leden.jpg'
