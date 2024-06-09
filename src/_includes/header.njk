@@ -3,7 +3,7 @@
         <a href="/"><img class="logo" src="/media/chiroherent.svg" alt="Chiro Herent" /></a>
         <img class="hamburger" src="/media/hamburger.png" onclick="hamburgerMenu()" />
         <nav id="navbar">
-            <!-- De navbar wordt gemaakt door eleventy, het bevat alle pagina's met de tag 'navbar' -->
+            {#- De navbar wordt gemaakt door eleventy, het bevat alle pagina's met de tag 'navbar' -#}
             <ul>
                 {%- for post in collections.NavbarSorted -%}
                 {% if page.url==post.url %} <li class="huidig" aria-current="page">{{post.data.title }}</li> {% else %}
