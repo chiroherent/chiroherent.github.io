@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300">
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="shortcut icon" href="/media/favicon.ico" type="image/x-icon">
-  <title>{{ title }}</title>
+  <link rel="shortcut icon" {% if favicon %}href="{{ favicon }}"{% else %}href="/media/favicon.ico"{% endif %} type="image/x-icon">
+  <title>{% if title %}{{ title }}{% else %}Chiro Herent{% endif %}</title>
   <meta name="generator" content="{{ eleventy.generator }}">
 </head>
 
