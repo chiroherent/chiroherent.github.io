@@ -1,5 +1,6 @@
 ---
 title: Template - Chiro Herent
+favicon: "/media/favicon.ico"
 layout: 'layouts/base.njk'
 eleventyNavigation:
   key: Template
