@@ -1,9 +1,9 @@
 ---
-title: Template
+title: Template - Chiro Herent
 layout: 'layouts/base.njk'
-tags:
-  - navbar
-order: 80
+eleventyNavigation:
+  key: Template
+  order: 80
 mainclass: pagina
 showcase: 
   image: '/media/kampklokachtergrond.jpg'
