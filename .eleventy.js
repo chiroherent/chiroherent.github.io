@@ -15,6 +15,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/scripts");
   eleventyConfig.addPassthroughCopy("src/kwikken");
 
+  // add current year to a page
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
   // order the left homepage items
   eleventyConfig.addCollection("HomepageLeftSorted", collection => {
     const HomepageLeftSorted = collection.getFilteredByTag("HomepageLeft")
