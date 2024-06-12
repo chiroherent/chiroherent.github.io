@@ -1,6 +1,6 @@
 ---
-title: Lid Worden - Chiro Herent
-favicon: "/media/favicon.ico"
+title: Lid Worden
+favicon: '/media/favicon.ico'
 layout: 'layouts/base.njk'
 eleventyNavigation:
   key: Lid Worden
