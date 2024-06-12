@@ -1,14 +1,14 @@
 ---
-title: Template
+title: Template PAS DIT AAN
 favicon: '/media/favicon.ico'
 layout: 'layouts/base.njk'
 eleventyNavigation:
-  key: Template
+  key: Template PAS DIT AAN
   order: 80
 mainclass: pagina
 showcase: 
   image: '/media/kampklokachtergrond.jpg'
-  title: Template
+  title: Template PAS DIT AAN
   placement: '50% 67%'
 ---
 
