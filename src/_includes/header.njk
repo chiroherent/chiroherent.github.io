@@ -3,12 +3,15 @@
         <a href="/"><img class="logo" src="/media/chiroherent.svg" alt="Chiro Herent" /></a>
         <img class="hamburger" src="/media/hamburger.png" onclick="hamburgerMenu()" />
         <nav id="navbar">
-            {#- De navbar wordt gemaakt door eleventy, het bevat alle pagina's met de tag 'navbar' -#}
+            {#- De navbar wordt gemaakt door eleventy, het bevat alle pagina's met 'eleventyNavigation' in hun front matter #}
             <ul>
                 {%- for entry in collections.all | eleventyNavigation -%}
-                {% if page.url==entry.url %} <li class="huidig" aria-current="page">{{ entry.title }}</li> {% else %}
-                <li><a href="{{ entry.url }}">{{ entry.title }}</a></li> {% endif %}
-                {%- endfor -%}
+                {%- if page.url==entry.url %}
+                <li class="huidig" aria-current="page">{{ entry.title }}</li>
+                {%- else %}
+                <li><a href="{{ entry.url }}">{{ entry.title }}</a></li>
+                {%- endif %}
+                {%- endfor %}
             </ul>
         </nav>
     </div>

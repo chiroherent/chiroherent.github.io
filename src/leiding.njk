@@ -13,7 +13,7 @@ showcase:
 ---
 
 {#- De info hier wordt bepaald door _data/leiding.yaml -#}
-{% for class, groupObj in {
+{%- for class, groupObj in {
 verantwoordelijken: {hoofdleiding: "Hoofdleiding", vb: "Volwassen begeleiders"},
 kiekeboes: {kiekeboes: "Kiekeboes"},
 speelclub: {speelclub: "Speelclub"},
@@ -21,20 +21,24 @@ rakwis: {kwikken: "Kwikken", rakkers: "Rakkers"},
 titos: {tippers: "Tippers", toppers: "Toppers"},
 ketis: {tiptiens: "Tiptiens", kerels: "Kerels"},
 aspis: {aspimeisjes: "Aspi-meisjes", aspijongens: "Aspi-jongens"}
-} %}
+} -%}
 <div class="{{ class }}">
-  {% for group, groupName in groupObj %}
+  {%- for group, groupName in groupObj %}
   <h3>{{ groupName}}</h3>
   <ul id="{{ group }}">
-    {% for leiding in leiding[group] %}
+    {%- for leiding in leiding[group] %}
     <li><strong>{{ leiding.name }}</strong>
       <ul>
-        {% if leiding.email != null %}<li><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></li>{% endif %}
-        {% if leiding.phone != null %}<li>{{ leiding.phone }}</li>{% endif %}
+        {%- if leiding.email != null %}
+        <li><a href="mailto:{{ leiding.email }}">{{ leiding.email }}</a></li>
+        {%- endif %}
+        {%- if leiding.phone != null %}
+        <li>{{ leiding.phone }}</li>
+        {%- endif %}
       </ul>
     </li>
-    {% endfor %}
+    {%- endfor %}
   </ul>
-  {% endfor %}
+  {%- endfor %}
 </div>
-{% endfor %}
+{%- endfor %}
