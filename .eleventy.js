@@ -38,6 +38,8 @@ module.exports = function (eleventyConfig) {
 
   // return object options in the object starting on the line below
   return {
+    markdownTemplateEngine: "njk",
+    htmlTemplateEngine: "njk",
     dir: {
       input: "src",
       includes: "_includes",
