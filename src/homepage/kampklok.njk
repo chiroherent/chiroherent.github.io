@@ -1,0 +1,24 @@
+---
+order: 80
+tags:
+- HomepageRight
+eleventyExcludeFromCollections: false
+---
+
+<h3>Kamp van 20 juli tot 30 juli</h3>
+<script>
+    beginVoorKamp = [17, 7]; // begindatum voorkamp
+    beginKamp = [20, 7]; // begindatum kamp
+    eindeKamp = [30, 7]; // einddatum kamp
+</script>
+
+<div
+  style="background-image: url('/media/kampklokachtergrond.jpg');  background-size: 100% 250%; background-position: 00% 40%; background-repeat:repeat; width: 100%; height: 250px; overflow: hidden">
+  <div class="centered">
+    <h2 id="kampkloktitel" class="kampklok">Kampklok</h2>
+    <p id="kampklokuitleg" class="kampklok">Sta JavaScript toe om af te tellen naar kamp</p>
+    <p id="kampkloktijd" class="kampklok"></p>
+    <p id="kampklokinfo" class="kampklok">Hopelijk tot snel op kamp!</p>
+  </div>
+  <script src="/scripts/kampklok.js"></script>
+</div>
