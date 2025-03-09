@@ -36,6 +36,9 @@ module.exports = function (eleventyConfig) {
     return HomepageRightSorted;
   });
 
+  // add a filter to format dates
+  eleventyConfig.addFilter('numberToMonth', require('./config/filters/numbertomonth'));
+
   // return object options in the object starting on the line below
   return {
     markdownTemplateEngine: "njk",

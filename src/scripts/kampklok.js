@@ -12,9 +12,9 @@ if (typeof eindeKamp === 'undefined' || eindeKamp === null) {
 const now = new Date();
 
 // jaar van kamp bepalen
-const eindeKampDate = new Date(now.getFullYear(), eindeKamp[1] - 1, eindeKamp[0], 13);
+const eindeKampDitJaar = new Date(now.getFullYear(), eindeKamp[1] - 1, eindeKamp[0], 13);
 let jaarvankamp;
-if (now < eindeKampDate) {
+if (now < eindeKampDitJaar) {
     jaarvankamp = now.getFullYear();
 } else {
     jaarvankamp = now.getFullYear() + 1;
@@ -23,13 +23,19 @@ if (now < eindeKampDate) {
 // begin en einde kamp instellen met het gevonden jaar
 const beginVoorKampDate = new Date(jaarvankamp, beginVoorKamp[1] - 1, beginVoorKamp[0], 9); // om 9u
 const beginKampDate = new Date(jaarvankamp, beginKamp[1] - 1, beginKamp[0], 9); // om 9u
-const eindeKampDateFinal = new Date(jaarvankamp, eindeKamp[1] - 1, eindeKamp[0], 13); // om 13u
+const eindeKampDate = new Date(jaarvankamp, eindeKamp[1] - 1, eindeKamp[0], 13); // om 13u
 let kampBezig = false; // wordt nog aangepast als kamp bezig is
+;
+
+// add to calendar knop aanpassen, de knop zal niet zichtbaar worden zonder deze aanpassingen
+document.getElementById("add-to-calendar-button").setAttribute("iCalFileName", `chirokamp${jaarvankamp}`);
+document.getElementById("add-to-calendar-button").setAttribute("startDate", beginKampDate.toISOString().slice(0, 10));
+document.getElementById("add-to-calendar-button").setAttribute("endDate", eindeKampDate.toISOString().slice(0, 10));
 
 // veel gebruikte waarden bewaren
 const beginVoorKampMillisec = beginVoorKampDate.getTime();
 const beginKampMillisec = beginKampDate.getTime();
-const eindeKampMillisec = eindeKampDateFinal.getTime();
+const eindeKampMillisec = eindeKampDate.getTime();
 const nowMillisec = now.getTime();
 
 

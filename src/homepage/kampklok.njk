@@ -5,15 +5,34 @@ tags:
 eleventyExcludeFromCollections: false
 ---
 
-<h3>Kamp van 21 juli tot 31 juli</h3>
-<script>
-    beginVoorKamp = [18, 7]; // begindatum voorkamp
-    beginKamp = [21, 7]; // begindatum kamp
-    eindeKamp = [31, 7]; // einddatum kamp
-</script>
+<h3 id="kampkloktitel">Kamp van {{ jaardata.beginKamp[0] }} {{ jaardata.beginKamp[1] | numberToMonth }} tot {{ jaardata.eindeKamp[0] }} {{ jaardata.eindeKamp[1] | numberToMonth }}</h3>
+
+<script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
+<add-to-calendar-button id="add-to-calendar-button"
+  name="Kamp Chiro Herent"
+  description="Het leukste Chiromoment van het jaar!"
+  startDate="07-20"
+  startTime="09:00"
+  endDate="07-30"
+  endTime="13:00"
+  timeZone="Europe/Brussels"
+  organizer="Chiro Herent|leiding.chiroherent@gmail.com"
+  iCalFileName="chirokamp"
+  options="'Apple','Google','iCal','Outlook.com'"
+  listStyle="dropup-static"
+  hideCheckmark
+  label="Voeg toe aan agenda"
+  lightMode="bodyScheme"
+  language="nl"
+></add-to-calendar-button>
 
 <div
   style="background-image: url('/media/kampklokachtergrond.jpg');  background-size: 100% 250%; background-position: 00% 40%; background-repeat:repeat; width: 100%; height: 250px; overflow: hidden">
+  <script>
+    beginVoorKamp = [{{ jaardata.beginVoorKamp }}];
+    beginKamp = [{{ jaardata.beginKamp }}];
+    eindeKamp = [{{ jaardata.eindeKamp }}];
+</script>
   <div class="centered">
     <h2 id="kampkloktitel" class="kampklok">Kampklok</h2>
     <p id="kampklokuitleg" class="kampklok">Sta JavaScript toe om af te tellen naar kamp</p>
