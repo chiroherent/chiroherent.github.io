@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="{{ metadata.language }}" class="backgroundsecondary">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} - {% endif %}{{ metadata.name }}</title>
+  <meta name="title" content="{% if title %}{{ title }} - {% endif %}{{ metadata.name }}">
+  <meta name="description" content="{{ metadata.description }}">
+  <meta name="author" content="{{ metadata.name }}">
   <meta name="generator" content="{{ eleventy.generator }}">
+  <meta name="robots" content="index">
+  <link rel="canonical" href="{{ site.url | url }}{{ page.url }}">
+  <link rel="shortcut icon" {% if favicon %}href="{{ favicon }}" {% else %}href="/media/favicon.ico" {% endif %} type="image/x-icon">
+  <link rel="apple-touch-icon" href="{{ '/media/leidingspagina.jpg' | url }}">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300">
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="shortcut icon" {% if favicon %}href="{{ favicon }}"{% else %}href="/media/favicon.ico"{% endif %} type="image/x-icon">
-  <title>{% if title %}{{ title }} - {% endif %}Chiro Herent</title>
 </head>
+
 <body>
-{% include 'header.njk' %}
-<section class="showcase"
-  style="background-image: url('{{ showcase.image }}'); background-position: {{ showcase.placement }};">
-  <h1 class="showcasetext">{{ showcase.title }}</h1>
-</section>
-<main class="{{ mainclass }}">
-{{ content | safe }}
-</main>
-{% include 'footer.njk' %}
+  {% include 'header.njk' %}
+  <section class="showcase" style="background-image: url('{{ showcase.image }}'); background-position: {{ showcase.placement }};">
+    <h1 class="showcasetext">{{ showcase.title }}</h1>
+  </section>
+  <main class="{{ mainclass }}">
+    {{ content | safe }}
+  </main>
+  {% include 'footer.njk' %}
 </body>
+
 </html>

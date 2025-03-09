@@ -1,7 +1,7 @@
 <footer>
-    <p>© {% year %} Chiro Herent</p>
-    <p><a class="maps" href="https://goo.gl/maps/Uh1MN5SQFpmxxETr8">Broekveldstraat 33, 3020 Herent</a></p>
-    <p><a class="email" href="mailto:leiding.chiroherent@gmail.com" target="_top">leiding.chiroherent@gmail.com</a></p>
+    <p>© {% year %} {{ metadata.name }}</p>
+    <p><a class="maps" href="{{ metadata.address.link }}">{{ metadata.address.street }}, {{ metadata.address.postalCode }} {{ metadata.address.city }}</a></p>
+    <p><a class="email" href="mailto:{{ metadata.email }}" target="_top">{{ metadata.email }}</a></p>
     <p><a class="privacy" href="/media/Privacyverklaring-Chiro-Herent.pdf" target="_blank">Privacyverklaring</a></p>
     </div>
 </footer>
