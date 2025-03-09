@@ -15,4 +15,4 @@ Vanaf 6 jaar kan je terecht bij de Kiekeboes. Bij de kiekeboes en Speelclub zitt
 
 **Lidgeld:** Het lidgeld bedraagt 40 euro per lid per jaar.
 
-[Klik hier voor meer info of om je in te schrijven](/lidworden/)
+[Klik hier voor meer info of om je in te schrijven]({{ '/lidworden/' | url }})

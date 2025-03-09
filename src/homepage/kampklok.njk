@@ -27,7 +27,7 @@ eleventyExcludeFromCollections: false
 ></add-to-calendar-button>
 
 <div
-  style="background-image: url('/media/kampklokachtergrond.jpg');  background-size: 100% 250%; background-position: 00% 40%; background-repeat:repeat; width: 100%; height: 250px; overflow: hidden">
+  style="background-image: url('{{ '/media/kampklokachtergrond.jpg' | url }}');  background-size: 100% 250%; background-position: 00% 40%; background-repeat:repeat; width: 100%; height: 250px; overflow: hidden">
   <script>
     beginVoorKamp = [{{ jaardata.beginVoorKamp }}];
     beginKamp = [{{ jaardata.beginKamp }}];
@@ -39,5 +39,5 @@ eleventyExcludeFromCollections: false
     <p id="kampkloktijd" class="kampklok"></p>
     <p id="kampklokinfo" class="kampklok">Hopelijk tot snel op kamp!</p>
   </div>
-  <script src="/scripts/kampklok.js"></script>
+  <script src="{{ '/scripts/kampklok.js' | url }}"></script>
 </div>

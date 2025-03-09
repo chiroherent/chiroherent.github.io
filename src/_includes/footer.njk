@@ -2,6 +2,6 @@
     <p>© {% year %} {{ metadata.name }}</p>
     <p><a class="maps" href="{{ metadata.address.link }}">{{ metadata.address.street }}, {{ metadata.address.postalCode }} {{ metadata.address.city }}</a></p>
     <p><a class="email" href="mailto:{{ metadata.email }}" target="_top">{{ metadata.email }}</a></p>
-    <p><a class="privacy" href="/media/Privacyverklaring-Chiro-Herent.pdf" target="_blank">Privacyverklaring</a></p>
+    <p><a class="privacy" href="{{ '/media/Privacyverklaring-Chiro-Herent.pdf' | url }}" target="_blank">Privacyverklaring</a></p>
     </div>
 </footer>

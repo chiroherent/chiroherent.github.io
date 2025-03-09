@@ -13,14 +13,14 @@
   <meta name="generator" content="{{ eleventy.generator }}">
   <meta name="robots" content="index">
   <link rel="canonical" href="{{ site.url | url }}{{ page.url }}">
-  <link rel="shortcut icon" {% if favicon %}href="{{ favicon }}" {% else %}href="/media/favicon.ico" {% endif %} type="image/x-icon">
+  <link rel="shortcut icon" {% if favicon %}href="{{ favicon | url }}" {% else %}href="{{ '/media/favicon.ico' | url }}" {% endif %} type="image/x-icon">
   <link rel="apple-touch-icon" href="{{ '/media/leidingspagina.jpg' | url }}">
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }} ">
 </head>
 
 <body>

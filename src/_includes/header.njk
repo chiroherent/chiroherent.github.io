@@ -1,7 +1,7 @@
 <header>
     <div class="container">
-        <a href="/"><img class="logo" src="/media/chiroherent.png" alt="{{ metadata.name }}" /></a>
-        <img class="hamburger" src="/media/hamburger.png" onclick="hamburgerMenu()" />
+        <a href="/"><img class="logo" src="{{ '/media/chiroherent.png' | url }}" alt="{{ metadata.name }}" /></a>
+        <img class="hamburger" src="{{ '/media/hamburger.png' | url }}" onclick="hamburgerMenu()" />
         <nav id="navbar">
             {#- De navbar wordt gemaakt door eleventy, het bevat alle pagina's met 'eleventyNavigation' in hun front matter #}
             <ul>
@@ -9,7 +9,7 @@
                 {%- if page.url==entry.url %}
                 <li class="huidig" aria-current="page">{{ entry.title }}</li>
                 {%- else %}
-                <li><a href="{{ entry.url }}">{{ entry.title }}</a></li>
+                <li><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
                 {%- endif %}
                 {%- endfor %}
             </ul>
@@ -17,4 +17,4 @@
     </div>
 </header>
 <!-- navbar.js zorgt voor het hamburger menu op smalle schermen -->
-<script src="/scripts/navbar.js"></script>
+<script src="{{ '/scripts/navbar.js' | url }}"></script>

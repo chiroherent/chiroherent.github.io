@@ -22,4 +22,4 @@ Paragraaf 2 [Link text](https://iets) verder paragraaf 2
 
 paragraaf 3, met *schuine tekst*
 
-![afbeelding](/media/fairtrade.png)
+![afbeelding]({{ '/media/fairtrade.png' | url }})
