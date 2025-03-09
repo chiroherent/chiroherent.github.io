@@ -8,7 +8,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(require("@11ty/eleventy-navigation"));
 
   // these files and folders will not be processed by 11ty
-  eleventyConfig.addPassthroughCopy("CNAME");
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/media");
   eleventyConfig.addPassthroughCopy("src/scripts");
