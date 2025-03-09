@@ -8,7 +8,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(require("@11ty/eleventy-navigation"));
 
   // these files and folders will not be processed by 11ty
-  // more info: https://www.11ty.dev/docs/copy/
   eleventyConfig.addPassthroughCopy("CNAME");
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/media");
@@ -18,23 +17,10 @@ module.exports = function (eleventyConfig) {
   // add current year to a page
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
-  // order the left homepage items
-  eleventyConfig.addCollection("HomepageLeftSorted", collection => {
-    const HomepageLeftSorted = collection.getFilteredByTag("HomepageLeft")
-      .sort((a, b) => {
-        return Number(a.data.order) - Number(b.data.order);
-      });
-    return HomepageLeftSorted;
-  });
-
-  // order the right homepage items
-  eleventyConfig.addCollection("HomepageRightSorted", collection => {
-    const HomepageRightSorted = collection.getFilteredByTag("HomepageRight")
-      .sort((a, b) => {
-        return Number(a.data.order) - Number(b.data.order);
-      });
-    return HomepageRightSorted;
-  });
+  // order the homepage items
+  const collectionSorted = require('./config/collections/collectionSorted');
+  eleventyConfig.addCollection('HomepageLeftSorted', (collection) => collectionSorted(collection, 'HomepageLeft'));
+  eleventyConfig.addCollection('HomepageRightSorted', (collection) => collectionSorted(collection, 'HomepageRight'));
 
   // add a filter to format dates
   eleventyConfig.addFilter('numberToMonth', require('./config/filters/numbertomonth'));
